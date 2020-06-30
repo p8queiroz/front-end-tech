@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900'); 
+
+* {
+  box-sizing: border-box; /*it facilitates working with padding*/
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*avoids text to touch the screen */
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*typography*/
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5em;
+}
+
+.title span {
+  font-weight: 300;
+  display: block;
+  font-size: .9em;
+}
+
+/*button*/
+
+.button {
+  display: inline-block; /*if dont, the padding dont add to the height, the items will be 'merge' to each other*/
+  font-size: 1.15rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-style: 2px;
+  border-style: solid;
+  padding: .5em 1.17em;
+}
+
+
+/*header*/
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 1em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 1em;
+}
+
+
+nav a {
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8em;
+  color: #fff;
+  padding: .7em;
+}
+
+nav a:hover, 
+nav a:focus {
+  color: #ddd;
+}
+
+/*home*/
+.home {
+  padding: 10em 0;
+  background-image:url(https://singularityhub.com/wp-content/uploads/2019/07/vintage-retro-human-heart-future-shutterstock-663103276-1-1068x601.jpg) ;
+  color: #fff;
+}
+
+
+
+/*footer*/
