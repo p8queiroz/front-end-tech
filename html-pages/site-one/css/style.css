@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900'); 
 
+/*
+
+  16px	1.0000em	100.00%
+
+*/
+
+/*==========================================================General*/
 * {
   box-sizing: border-box; /*it facilitates working with padding*/
 }
@@ -21,7 +28,8 @@ img {
   margin: 0 auto;
 }
 
-/*typography*/
+
+/*==========================================================typography*/
 .title {
   font-size: 2.5rem;
   margin-bottom: 1.5em;
@@ -30,10 +38,17 @@ img {
 .title span {
   font-weight: 300;
   display: block;
-  font-size: .9em;
+  font-size: .9em; /*percetage related to the parent*/
 }
 
-/*button*/
+@media(min-width: 53rem) {
+  .title {
+    font-size: 3em;
+  }
+}
+
+
+/*==========================================================button*/
 
 .button {
   display: inline-block; /*if dont, the padding dont add to the height, the items will be 'merge' to each other*/
@@ -42,20 +57,39 @@ img {
   text-transform: uppercase;
   border-style: 2px;
   border-style: solid;
-  padding: .5em 1.17em;
+  padding: 0 1.17em;
+}
+
+.button-primary {
+  color: #00ff6c;
+  border-color: #00ff6c;
+}
+
+.button-primary:focus,
+.button-primary:hover  {
+  background: #00ff6c;
+  color: #232323
+}
+
+@media(min-width: 53rem) {
+  
+  .button {
+    font-size: 1.5rem;
+  }
 }
 
 
-/*header*/
+
+/*==========================================================header*/
 header {
   position: absolute;
   left: 0;
   right: 0;
-  margin-top: 1em;
+  margin: 2em;
 }
 
 nav ul {
-  margin: 0;
+  margin: 2em;
   padding: 0;
   list-style: none;
 }
@@ -80,12 +114,40 @@ nav a:focus {
   color: #ddd;
 }
 
-/*home*/
+@media(min-width: 53rem) {
+
+  /*for bigger screens, make the logo float left and the nav float right*/
+  
+  .logo {
+    float: left;
+  }
+
+  nav {
+    float: right;
+  }
+
+}
+
+
+/*==========================================================home*/
 .home {
   padding: 10em 0;
   background-image:url(https://singularityhub.com/wp-content/uploads/2019/07/vintage-retro-human-heart-future-shutterstock-663103276-1-1068x601.jpg) ;
   color: #fff;
+  background-position: cover;
+  background-position: center;
 }
+
+@media(min-width: 53rem) {
+  
+  .home {
+    height: 100vh; /*to position the element vertically*/
+    padding-top: 35vh;
+  }
+
+}
+
+
 
 
 
