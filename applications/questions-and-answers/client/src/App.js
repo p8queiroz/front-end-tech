@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import data from './data/data';
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
         </a>
+        {data.toString()}
       </header>
     </div>
   );
