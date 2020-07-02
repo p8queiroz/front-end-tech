@@ -4,6 +4,7 @@
 
   16px	1.0000em	100.00%
 
+
 */
 
 /*==========================================================General*/
@@ -30,9 +31,18 @@ img {
 
 
 /*==========================================================typography*/
+
+h1 {
+  font-weight: 300;
+  font-size: 2.4rem;
+  margin-top: 0; /*added after changing the values in the home screen*/
+}
+
 .title {
   font-size: 2.5rem;
   margin-bottom: 1.5em;
+  font-weight: 900;
+  margin-top: 0;
 }
 
 .title span {
@@ -72,31 +82,28 @@ img {
 }
 
 @media(min-width: 53rem) {
-  
   .button {
     font-size: 1.5rem;
   }
 }
-
-
 
 /*==========================================================header*/
 header {
   position: absolute;
   left: 0;
   right: 0;
-  margin: 2em;
+  margin: 1em;
 }
 
 nav ul {
-  margin: 2em;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 nav li {
   display: inline-block;
-  margin: 1em;
+  margin: 0;
 }
 
 
@@ -148,7 +155,50 @@ nav a:focus {
 }
 
 
+/*==========================================================home about*/
 
+.about-textbox {
+  background-color: #232323;
+  padding: 4em;
+  width: 100vw; /*total size of the view*/
+  margin-left: -2.7%;
+  outline: 2px solid #00ff6c; /*it works as the border property. We can offset them either outwards or inwards and so I've offset it inwards*/
+  outline-offset: -2.5em;
+  color: #fff;
+  position: relative; /*this is used for setting the title above the border*/
+}
 
+.about-textbox h1 {
+ color:  #00ff6c;
+ position: absolute;
+ top: .3em;
+ background-color: #232323;
+ padding: 0 .145em;
+ /*the properties bellow are a trick to keep the h1 always in the middle*/
+ left: 50%;
+ transform: translateX(-50%);
+}
+
+@media (min-width: 25rem) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .about-textbox h1 {
+    top: .6em;
+    padding: 0 .35em;
+  }
+}
+
+@media (min-width: 60rem) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-textbox h1 {
+    top: .3em;
+    padding: 0 .6em;
+  }
+}
 
 /*footer*/
