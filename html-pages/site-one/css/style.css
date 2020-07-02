@@ -5,6 +5,7 @@
   16px	1.0000em	100.00%
 
 
+
 */
 
 /*==========================================================General*/
@@ -29,12 +30,11 @@ img {
   margin: 0 auto;
 }
 
-
 /*==========================================================typography*/
 
 h1 {
   font-weight: 300;
-  font-size: 2.4rem;
+  font-size: 1.7rem;
   margin-top: 0; /*added after changing the values in the home screen*/
 }
 
@@ -171,7 +171,7 @@ nav a:focus {
 .about-textbox h1 {
  color:  #00ff6c;
  position: absolute;
- top: .3em;
+ top: .75em;
  background-color: #232323;
  padding: 0 .145em;
  /*the properties bellow are a trick to keep the h1 always in the middle*/
@@ -183,7 +183,6 @@ nav a:focus {
   h1 {
     font-size: 2rem;
   }
-
   .about-textbox h1 {
     top: .6em;
     padding: 0 .35em;
@@ -194,7 +193,6 @@ nav a:focus {
   h1 {
     font-size: 2.5rem;
   }
-
   .about-textbox h1 {
     top: .3em;
     padding: 0 .6em;
