@@ -9,3 +9,19 @@ Funny Loren ipsum Generator:
 
 Json Generator
 1. https://www.json-generator.com/
+
+[
+  '{{repeat(5, 40)}}',
+  {
+    _id: '{{objectId()}}',
+    technology: '{{company()}}',
+	picture: 'http://placehold.it/32x32',
+    isActive: '{{bool()}}',
+    level:  function (tags) {
+      var level = ['easy', 'medium', 'intermediate', 'hard'];
+      return level[tags.integer(0, level.length - 1)];
+    },
+    description: '{{lorem(1, "paragraphs").substring(0,170) + " ?"}}',
+	answer: '{{lorem(2, "paragraphs")}}',
+  }
+]
