@@ -23,13 +23,19 @@
   font-size: calc(10px + 2vmin);
 }
 
-.container {
-  padding: 0 10rem;
+/*typography*/
+h1 { 
+  font-size: 1.5em;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  font-size: 1.2rem;
 }
+
+.container {
+  padding: 0 1rem;
+}
+
 
 @keyframes App-logo-spin {
   from {
