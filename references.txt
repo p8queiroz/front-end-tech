@@ -1,7 +1,9 @@
 Site to get free icons:
-
 1. https://www.flaticon.com/
 
+
+CSS icons site:
+1. https://cssicon.space/#/icon/
 
 Funny Loren ipsum Generator:
 1. http://officeipsum.com/index.php

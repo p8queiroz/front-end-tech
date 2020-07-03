@@ -6,14 +6,23 @@ const CardQuestion = ({ question }) => {
             <div className="card">
                 <div className="content">
                     <div className="question">
-                        <div className="question-mark">?</div>
+                        <div className="circle-container">
+                            <div class="outer circle">
+                                <div class="inner circle">
+                                    <div className="question-mark">?</div>
+                                </div>
+                            </div>
+                        </div>
                         <p>{question}</p>
                     </div>
                     <div className="options">
-                        <div className="awnser">check as respostas</div>
+                        <div className="awnser-option">
+                            <div class="chat icon"></div>
+                        </div>
                         <div className="social">
-                            <div className="twitter">FB</div>
-                            <div className="twitter">TW</div>
+                            <div className="twitter">
+                                <div class="retweet icon"></div>
+                            </div>
                         </div>
                     </div>
                     <div className="answer">
