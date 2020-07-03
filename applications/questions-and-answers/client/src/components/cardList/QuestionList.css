@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+    margin-bottom: 3rem;
+}
+
+.card .content {
+    flex: 1 1 auto;
+    background-color: aqua;
+}
+
+.card footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card footer .social{
+    display: flex;
+    justify-content: space-between;
+}
+
+.options {
+    padding: 2rem;
+}
+
