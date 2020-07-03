@@ -5,15 +5,21 @@ const CardQuestion = ({ question }) => {
         <React.Fragment>
             <div className="card">
                 <div className="content">
-                    <p>{question}</p>
-                </div>
-                <footer>
-                    <div className="awnser">check as respostas</div>
-                    <div className="social">
-                        <div className="twitter">FB</div>
-                        <div className="twitter">TW</div>
+                    <div className="question">
+                        <div className="question-mark">?</div>
+                        <p>{question}</p>
                     </div>
-                </footer>
+                    <div className="options">
+                        <div className="awnser">check as respostas</div>
+                        <div className="social">
+                            <div className="twitter">FB</div>
+                            <div className="twitter">TW</div>
+                        </div>
+                    </div>
+                    <div className="answer">
+                        testando respostas.....
+                    </div>
+                </div>
             </div>
         </React.Fragment>
     );

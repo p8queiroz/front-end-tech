@@ -3,7 +3,6 @@ import CardQuestion from '../card/CardQuestion';
 import './QuestionList.css';
 
 const QuestionList = ({ questions }) => {
-    //  const [steps, setSteps] = useState(0);
 
     const handleSelect = (event) => {
         const { target: { value } } = event; /******/
