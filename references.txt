@@ -27,3 +27,10 @@ Json Generator
 	answer: '{{lorem(2, "paragraphs")}}',
   }
 ]
+
+Hmtl code generator:
+1. https://html5-editor.net/
+
+
+For future review:
+https://blog.bitsrc.io/how-to-implement-smooth-transitions-in-react-bd0497b06b8

@@ -16,6 +16,24 @@
     position: relative;
 }
 
+
+
+/**********************************************answer css*/
+.card .answer {
+  display: none;
+}
+
+.card .answer.active {
+    display: block;
+    -webkit-transition: -webkit-transform 5s ease;
+    height: 10%;
+    padding: 2rem;
+}
+
+
+
+
+/**********************************************question css*/
 .card .content .question {
     margin: 0;
 }
@@ -26,13 +44,14 @@
     padding-left: 1.3rem;
 }
 
+.card .content .question.active,
 .card .content .question:hover,
 .card .content .question:focus {
     background-color: rgba(169, 7, 233);
     margin: 0;
-
 }
 
+.card .content .question.active p,
 .card .content .question:hover p,
 .card .content .question:focus p {
     color: white;
@@ -71,8 +90,6 @@
     color: white;
 }
 
-
-
 .card .content .options {
     padding: .5rem;
     display: flex;
@@ -80,11 +97,11 @@
     border: 1px solid #ccc;
 }
 
-.card .content .options .awnser-option {
+.card .content .options .answer-option {
     padding-bottom: 1.4rem;
 }
 
-.card .content .options .awnser-option .chat.icon {
+.card .content .options .answer-option .chat.icon {
     color: #000;
     position: absolute;
     margin-left: 2px;
@@ -95,7 +112,7 @@
     border-radius: 2px;
   }
 
-  .card .content .options .awnser-option .chat.icon:before {
+  .card .content .options .answer-option .chat.icon:before {
     content: '';
     position: absolute;
     left: 3px;

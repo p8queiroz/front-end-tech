@@ -30,7 +30,7 @@ const QuestionList = ({ questions }) => {
             </div>
             <section className="cards">
                 {questions.map((question) =>
-                    <CardQuestion key={question._id} question={question.description} />
+                    <CardQuestion key={question._id} question={question} />
                 )}
             </section>
         </React.Fragment>

@@ -6,7 +6,21 @@ const data = [
         "isActive": true,
         "level": "easy",
         "description": "Dolor est do culpa ea irure qui id id enim dolor et Lorem amet. Non ullamco magna laboris sunt aliqua esse dolore voluptate reprehenderit laboris in dolore. Cupidatat ess ?",
-        "answer": "Occaecat do occaecat enim sit. Nostrud sit id quis id anim cillum adipisicing fugiat ad ipsum exercitation mollit. Culpa duis laborum adipisicing officia Lorem est est laborum sit. Eiusmod irure enim exercitation duis veniam consectetur dolore veniam laboris magna pariatur. Nisi tempor ex aliquip deserunt proident laboris labore nostrud Lorem cupidatat incididunt dolor eiusmod. Deserunt Lorem ex cupidatat velit anim adipisicing cillum anim aute. Et irure labore esse deserunt in sint pariatur nisi.\r\nDolore exercitation irure exercitation consectetur aute aliqua aute dolor ut enim labore incididunt proident do. Nulla aute ex veniam ex veniam occaecat incididunt proident ea sit sit ea pariatur id. Non eu nostrud consectetur esse aute mollit non aliquip adipisicing consequat. Do veniam sunt id minim exercitation cillum esse in occaecat in sit. Nulla enim qui fugiat amet ut et dolore exercitation irure adipisicing ipsum dolor dolore quis.\r\n"
+        "answer": `
+        <p>In our “how to start a business” guide, we’ll break down 10 essential steps you can take to start your business—covering everything you need to know in order to launch a successful, profitable small business that customers will love.</p>
+        <ul>
+          <li><b>Step 1:</b> Research and find a business idea</li>
+          <li><b>Step 2:</b> Write a business plan</li>
+          <li><b>Step 3:</b> Choose your business's legal structure</li>
+          <li><b>Step 4:</b> Register your business</li>
+          <li><b>Step 5:</b> Apply for licenses and permits</li>
+          <li><b>Step 6:</b> Obtain funding for your small business</li>
+          <li><b>Step 7:</b> Assemble your team</li>
+          <li><b>Step 8:</b> Open a business bank account</li>
+          <li><b>Step 9:</b> Learn how to manage your finances</li>
+          <li><b>Step 10:</b> Start running and promoting your business</li>
+        </ul>
+        `
     },
     {
         "_id": "5efe52bdc004907bd3ce99ff",
@@ -15,7 +29,14 @@ const data = [
         "isActive": false,
         "level": "medium",
         "description": "Ea adipisicing veniam consectetur id veniam. Cillum cupidatat nostrud mollit eiusmod mollit cupidatat nulla Lorem. Non magna ea ut minim deserunt est irure ullamco. Volup ?",
-        "answer": "Deserunt non reprehenderit cupidatat aute occaecat quis irure elit qui eu voluptate sit minim excepteur. Incididunt exercitation dolore cillum dolore laboris cupidatat anim. Eiusmod Lorem sit occaecat aute. Nulla aliquip consequat ex ut nisi ut pariatur aliqua est nostrud ullamco eiusmod velit.\r\nNon magna cillum consectetur ex Lorem. Deserunt exercitation consectetur id est laboris. Cupidatat cillum pariatur ex eu elit ea ex voluptate et duis. Anim nulla ullamco est sit occaecat nisi ut laborum magna enim reprehenderit ad quis. Mollit laboris aute ea voluptate do. Esse laboris sunt cupidatat qui ipsum velit veniam reprehenderit incididunt eu ex cillum excepteur.\r\n"
+        "answer": `
+        <p>Secondly, we’ll break down 10 essential steps you can take to start your business—covering everything you need to know in order to launch a successful, profitable small business that customers will love.</p>
+        <ul>
+          <li><b>Step 1:</b> Research and find a business idea</li>
+          <li><b>Step 2:</b> Write a business plan</li>
+          <li><b>Step 3:</b> Choose your business's legal structure</li>
+        </ul>
+        `
     },
     {
         "_id": "5efe52bd657cbd2a1316e42b",
@@ -24,8 +45,12 @@ const data = [
         "isActive": false,
         "level": "easy",
         "description": "Pariatur ipsum non ex adipisicing excepteur commodo ut qui proident. Minim incididunt dolore fugiat laboris elit excepteur eu. Minim cillum ullamco qui sunt velit. Volupt ?",
-        "answer": "In veniam aliqua do consectetur est non culpa in enim aute enim aliquip elit. Laboris occaecat sint aliqua et voluptate. Consectetur ipsum voluptate proident sint elit mollit exercitation ea laboris nisi occaecat. Id cupidatat qui do adipisicing do in in do. Sit occaecat quis labore velit. Officia elit voluptate commodo qui.\r\nLabore pariatur duis enim consequat elit magna officia ad cupidatat do consequat labore veniam mollit. Esse ut nostrud dolor laboris minim cillum reprehenderit minim id exercitation enim ut Lorem eiusmod. In nulla aliquip reprehenderit velit do ut est.\r\n"
-    },
+        "answer": `
+        <p>Secondly, we’ll break down 10 essential steps you can take to start your business—covering everything you need to know in order to launch a successful, profitable small business that customers will love.</p>
+        <ul>
+          <li><b>Step 1:</b> Research and find a business idea</li>
+        </ul>
+        `    },
     {
         "_id": "5efe52bdb060803c27dc5593",
         "technology": "Baluba",
@@ -42,7 +67,34 @@ const data = [
         "isActive": false,
         "level": "intermediate",
         "description": "Ut quis et aute occaecat pariatur incididunt cupidatat proident enim ea sunt excepteur. Velit id esse laborum voluptate commodo pariatur nostrud. Laboris adipisicing ipsu ?",
-        "answer": "Laboris anim minim ipsum sit proident minim ex minim sunt voluptate non. Deserunt deserunt proident excepteur nulla. Eiusmod aliqua laboris labore labore excepteur veniam sint voluptate occaecat laboris non exercitation pariatur adipisicing. Aute culpa nulla consequat fugiat nulla deserunt excepteur.\r\nAdipisicing tempor consectetur adipisicing nisi magna non do laborum amet nostrud consectetur deserunt amet tempor. Elit pariatur sit do aliquip. Cillum ullamco fugiat ea nulla laboris sunt exercitation magna officia laboris. Occaecat eiusmod sint voluptate deserunt ut. Nisi sunt nostrud ad est incididunt ipsum excepteur dolor sunt in et eiusmod magna. Nulla exercitation esse dolor incididunt culpa irure fugiat duis cupidatat amet cillum nostrud aute sit. Pariatur fugiat tempor Lorem do adipisicing ea quis velit.\r\n"
+        "answer": `<!-- #######  THIS IS A COMMENT - Visible only in the source editor #########-->
+        <h2>Welcome To The Best Online HTML Web Editor!</h2>
+        <p style="font-size: 1.5em;">You can <strong style="background-color: #317399; padding: 0 5px; color: #fff;">type your text</strong> directly in the editor or paste it from a Word Doc, PDF, Excel etc.</p>
+        <table class="editorDemoTable">
+        <tbody>
+        <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>City</strong></td>
+        <td><strong>Age</strong></td>
+        </tr>
+        <tr>
+        <td>John</td>
+        <td>Chicago</td>
+        <td>23</td>
+        </tr>
+        <tr>
+        <td>Lucy</td>
+        <td>Wisconsin</td>
+        <td>19</td>
+        </tr>
+        <tr>
+        <td>Amanda</td>
+        <td>Madison</td>
+        <td>22</td>
+        </tr>
+        </tbody>
+        </table>
+        <p>This is a table you can experiment with.</p>`
     },
     {
         "_id": "5efe52bd9baba78423bedc18",
@@ -51,7 +103,32 @@ const data = [
         "isActive": true,
         "level": "hard",
         "description": "Dolor eu magna tempor non nulla dolore eu incididunt pariatur pariatur excepteur irure eu qui. Deserunt tempor incididunt consectetur magna incididunt do elit culpa sunt  ?",
-        "answer": "Anim dolor veniam anim deserunt nulla veniam culpa voluptate exercitation ullamco exercitation aliquip. Minim ullamco cillum ut Lorem sunt quis ipsum non veniam. Non aliqua nostrud Lorem ad ex pariatur eiusmod reprehenderit eu quis duis incididunt veniam. Voluptate sint ea in non laborum do.\r\nIn commodo non consectetur dolor aliqua minim dolore occaecat et ut culpa amet et. Labore minim do incididunt occaecat fugiat quis veniam sunt irure fugiat ea. Minim consectetur irure occaecat aute.\r\n"
+        "answer": `<div style="text-align: center;">Anim&nbsp;dolor&nbsp;veniam&nbsp;anim&nbsp;deserunt&nbsp;nulla&nbsp;veniam&nbsp;culpa&nbsp;voluptate&nbsp;exercitation&nbsp;ullamco&nbsp;exercitation&nbsp;aliquip.</div>
+        <div style="text-align: center;">&nbsp;</div>
+        <div style="text-align: center;">
+        <div>
+        <div>Minim&nbsp;ullamco&nbsp;cillum&nbsp;ut&nbsp;Lorem&nbsp;sunt&nbsp;quis&nbsp;ipsum&nbsp;non&nbsp;veniam.&nbsp;Non&nbsp;aliqua&nbsp;nostrud&nbsp;Lorem&nbsp;ad&nbsp;ex&nbsp;pariatur&nbsp;eiusmod&nbsp;repre</div>
+        </div>
+        <table>
+        <tbody>
+        <tr>
+        <td>aaaa</td>
+        <td>dsdsdsd</td>
+        <td>hjkjh</td>
+        <td>kjh</td>
+        </tr>
+        <tr>
+        <td>kjhkh</td>
+        <td>hkhjkh</td>
+        <td>khkjhkjhkjhkjh</td>
+        <td>dsd</td>
+        </tr>
+        </tbody>
+        </table>
+        <img src="https://miro.medium.com/max/1400/1*kg9Avc-5WQb2G2PQxHRPIg.gif" alt="" width="800" height="421" />
+        <p style="text-align: center;">&nbsp;</p>
+        <p>&nbsp;</p>
+        </div>`
     },
     {
         "_id": "5efe52bd9e003b531da20883",
