@@ -1,7 +1,7 @@
 import React from 'react';
 import Answer from '../answer/Answer';
 
-const CardQuestion = ({ question }) => {
+const Question = ({ question }) => {
 
     const [isOpened, setIsOpened] = React.useState(false);
     let { description, answer } = question;
@@ -11,8 +11,6 @@ const CardQuestion = ({ question }) => {
     }
 
     const share = () => alert("share this question!");
-
-
 
     return (
         <React.Fragment>
@@ -46,4 +44,4 @@ const CardQuestion = ({ question }) => {
         </React.Fragment>
     );
 }
-export default CardQuestion;
+export default Question;

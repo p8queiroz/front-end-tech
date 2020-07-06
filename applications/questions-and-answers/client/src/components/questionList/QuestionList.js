@@ -1,5 +1,5 @@
 import React from 'react';
-import CardQuestion from '../card/CardQuestion';
+import Question from '../question/Question';
 import QuestionFilter from '../questionFilter/QuestionFilter';
 import './QuestionList.css';
 
@@ -24,7 +24,7 @@ const QuestionList = ({ _questions }) => {
             <QuestionFilter callback={handleSelect}></QuestionFilter>
             <section className="cards">
                 {questions.map((question) =>
-                    <CardQuestion key={question._id} question={question} />
+                    <Question key={question._id} question={question} />
                 )}
             </section>
         </React.Fragment>
