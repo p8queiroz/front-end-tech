@@ -38,6 +38,8 @@ span {
 
 .container {
   padding: 0 1rem;
+  z-index: 500;
+
 }
 
 
@@ -57,6 +59,24 @@ span {
 
 .container .filters div span{
   padding-right: 1rem;
+}
+
+.App footer{
+  display: flex;
+  z-index: 10;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ccc;
+  color:white;
+  text-align: center;
+}
+
+.App footer div{
+  font-size: 0.7rem;
+  padding: 0 2rem 0 2rem;
 }
 
 

@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
 
 const Footer = () => {
-    const [steps, setSteps] = useState(0);
-
-    const increment = () => {
-        setSteps(prevState => prevState + 1);
-    }
 
     return (
         <React.Fragment>
-            <div>footer...</div>
+            <div className="about">
+                Wanna publish your question? email: phqs.phqs [at] gmail
+            </div>
         </React.Fragment>
     );
 }
