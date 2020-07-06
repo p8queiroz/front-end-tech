@@ -32,8 +32,31 @@ p {
   font-size: 1.2rem;
 }
 
+span {
+  font-size: .987rem;
+}
+
 .container {
   padding: 0 1rem;
+}
+
+
+.container .filters {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.container .filters div{
+  padding: .2rem;
+}
+
+.container .filters div select{
+  width: 6rem;
+}
+
+.container .filters div span{
+  padding-right: 1rem;
 }
 
 
