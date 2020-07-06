@@ -13,6 +13,16 @@ const QuestionFilter = ({ callback }) => {
                     <option value="dotnet">.net</option>
                 </select>
             </div>
+            {/*<div>
+                <span>Category:</span>
+                <select id="category" onChange={callback}>
+                    <option value=""></option>
+                    <option value="easy">easy</option>
+                    <option value="medium">medium</option>
+                    <option value="intermidiate">intermidiate</option>
+                    <option value="hard">hard</option>
+                </select>
+            </div>*/}
             <div>
                 <span>Level:</span>
                 <select id="level" onChange={callback}>
