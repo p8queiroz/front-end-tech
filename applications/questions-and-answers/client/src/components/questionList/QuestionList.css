@@ -29,6 +29,7 @@
     height: 10%;
     padding: 2rem;
     word-wrap: break-word;
+    text-align: justify;
 }
 
 .card .answer.active img {
@@ -46,7 +47,13 @@
 .card .content .question p {
     margin: 0;
     padding: 1rem;
-    padding-left: 1.3rem;
+    padding-left: 1.6rem;
+    text-align: justify;
+}
+
+.card .content .question p img {
+    max-width: 100%;
+    height: auto;
 }
 
 .card .content .question.active,

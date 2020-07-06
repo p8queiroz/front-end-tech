@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import data from './data/data';
+//import data from './data/data';
 import QuestionList from './components/questionList/QuestionList';
 import Footer from './components/footer/Footer';
 
@@ -23,7 +23,6 @@ function App() {
     fetch('http://quizzertech.com/system/wp-json/application-api/v1/om-question', init)
       .then(response => response.json())
       .then(data => {
-        console.log(data)
         setQuestion(data);
         setLoading(false);
       })

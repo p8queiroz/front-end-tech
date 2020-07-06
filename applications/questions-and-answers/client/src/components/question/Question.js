@@ -12,6 +12,10 @@ const Question = ({ question }) => {
 
     const share = () => alert("share this question!");
 
+    const descriptionhtml = () => {
+        return { __html: description };
+    }
+
     return (
         <React.Fragment>
             <div className="card">
@@ -24,7 +28,7 @@ const Question = ({ question }) => {
                                 </div>
                             </div>
                         </div>
-                        <p>{description}</p>
+                        <p dangerouslySetInnerHTML={descriptionhtml()}></p>
                     </div>
                     <div className="options">
                         <div className="answer-option" onClick={toggle}>
