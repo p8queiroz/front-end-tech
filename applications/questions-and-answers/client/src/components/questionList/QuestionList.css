@@ -8,7 +8,7 @@
 
 .card:focus,
 .card:hover{
-    border: 1px solid #000;
+    border: 1px solid rgba(169, 7, 233);;
 }
 
 .card .content {
@@ -60,15 +60,16 @@
 .card .content .question.active,
 .card .content .question:hover,
 .card .content .question:focus {
-    background-color: rgba(169, 7, 233);
+   /* background-color: rgba(169, 7, 233);*/
     margin: 0;
 }
 
+/*
 .card .content .question.active p,
 .card .content .question:hover p,
 .card .content .question:focus p {
     color: white;
-}
+}*/
 
 
 .card .content .question .circle-container {
