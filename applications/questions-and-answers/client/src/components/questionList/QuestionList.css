@@ -50,6 +50,7 @@
     padding-left: 1.6rem;
     text-align: justify;
     font-size: .9rem;
+    word-wrap: break-word;
 }
 
 .card .content .question p img {
