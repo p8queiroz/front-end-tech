@@ -10,7 +10,7 @@ function App() {
         <h1>Questions and answers for interview / certification</h1>
       </header>
       <section className="container">
-        <QuestionList questions={data} />
+        <QuestionList _questions={data} />
       </section>
       <footer>
         this is the footer

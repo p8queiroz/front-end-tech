@@ -1,11 +1,11 @@
 const data = [
     {
         "_id": "5efe52bd4ff72768c0c9ceb9",
-        "technology": "Namebox",
+        "technology": "react",
         "picture": "http://placehold.it/32x32",
         "isActive": true,
         "level": "easy",
-        "description": "Dolor est do culpa ea irure qui id id enim dolor et Lorem amet. Non ullamco magna laboris sunt aliqua esse dolore voluptate reprehenderit laboris in dolore. Cupidatat ess ?",
+        "description": "React Dolor est do culpa ea irure qui id id enim dolor et Lorem amet. Non ullamco magna laboris sunt aliqua esse dolore voluptate reprehenderit laboris in dolore. Cupidatat ess ?",
         "answer": `
         <p>In our “how to start a business” guide, we’ll break down 10 essential steps you can take to start your business—covering everything you need to know in order to launch a successful, profitable small business that customers will love.</p>
         <ul>
@@ -24,11 +24,11 @@ const data = [
     },
     {
         "_id": "5efe52bdc004907bd3ce99ff",
-        "technology": "Zeam",
+        "technology": "javascript",
         "picture": "http://placehold.it/32x32",
         "isActive": false,
         "level": "medium",
-        "description": "Ea adipisicing veniam consectetur id veniam. Cillum cupidatat nostrud mollit eiusmod mollit cupidatat nulla Lorem. Non magna ea ut minim deserunt est irure ullamco. Volup ?",
+        "description": "Javascript Ea adipisicing veniam consectetur id veniam. Cillum cupidatat nostrud mollit eiusmod mollit cupidatat nulla Lorem. Non magna ea ut minim deserunt est irure ullamco. Volup ?",
         "answer": `
         <p>Secondly, we’ll break down 10 essential steps you can take to start your business—covering everything you need to know in order to launch a successful, profitable small business that customers will love.</p>
         <ul>
@@ -40,11 +40,11 @@ const data = [
     },
     {
         "_id": "5efe52bd657cbd2a1316e42b",
-        "technology": "Furnitech",
+        "technology": "react",
         "picture": "http://placehold.it/32x32",
         "isActive": false,
         "level": "easy",
-        "description": "Pariatur ipsum non ex adipisicing excepteur commodo ut qui proident. Minim incididunt dolore fugiat laboris elit excepteur eu. Minim cillum ullamco qui sunt velit. Volupt ?",
+        "description": "React Pariatur ipsum non ex adipisicing excepteur commodo ut qui proident. Minim incididunt dolore fugiat laboris elit excepteur eu. Minim cillum ullamco qui sunt velit. Volupt ?",
         "answer": `
         <p>Secondly, we’ll break down 10 essential steps you can take to start your business—covering everything you need to know in order to launch a successful, profitable small business that customers will love.</p>
         <ul>
@@ -53,11 +53,11 @@ const data = [
         `    },
     {
         "_id": "5efe52bdb060803c27dc5593",
-        "technology": "Baluba",
+        "technology": "javascript",
         "picture": "http://placehold.it/32x32",
         "isActive": true,
         "level": "easy",
-        "description": "Sit reprehenderit anim consectetur dolore sit id velit consequat ut nostrud in mollit sit in. Id cillum pariatur id aliquip ea amet cupidatat. Cillum non consectetur eu c ?",
+        "description": "javascript Sit reprehenderit anim consectetur dolore sit id velit consequat ut nostrud in mollit sit in. Id cillum pariatur id aliquip ea amet cupidatat. Cillum non consectetur eu c ?",
         "answer": "Deserunt aute ullamco reprehenderit eu dolore velit fugiat ex cillum reprehenderit enim cupidatat voluptate. Mollit ullamco mollit nisi ut qui elit est duis adipisicing. Mollit sunt do culpa consequat esse quis. Ut culpa incididunt officia magna pariatur in occaecat est. Est aliqua ad deserunt excepteur.\r\nSint aute consequat et do consectetur esse nisi laborum qui irure deserunt est. Pariatur consectetur aliquip nulla incididunt reprehenderit sit cupidatat nostrud mollit sint mollit minim. Elit fugiat id esse cillum elit. Reprehenderit fugiat incididunt deserunt ut sint quis.\r\n"
     },
     {
@@ -98,7 +98,7 @@ const data = [
     },
     {
         "_id": "5efe52bd9baba78423bedc18",
-        "technology": "Waterbaby",
+        "technology": "dotnet",
         "picture": "http://placehold.it/32x32",
         "isActive": true,
         "level": "hard",
@@ -132,11 +132,11 @@ const data = [
     },
     {
         "_id": "5efe52bd9e003b531da20883",
-        "technology": "Combot",
+        "technology": "react",
         "picture": "http://placehold.it/32x32",
         "isActive": true,
         "level": "hard",
-        "description": "Sint ea pariatur reprehenderit duis ex duis dolore minim sint ad qui. Veniam ex proident irure occaecat. Sint mollit duis nisi veniam pariatur elit quis consectetur do do ?",
+        "description": "React Sint ea pariatur reprehenderit duis ex duis dolore minim sint ad qui. Veniam ex proident irure occaecat. Sint mollit duis nisi veniam pariatur elit quis consectetur do do ?",
         "answer": "Magna aute ipsum irure irure fugiat dolor mollit labore laborum aute laborum id nostrud occaecat. Et aute nulla tempor quis labore ad. Laboris sit voluptate enim dolore esse excepteur officia laboris fugiat mollit ullamco aliquip aliqua dolor. Reprehenderit laboris anim adipisicing non Lorem ut laborum in esse eu commodo nisi exercitation. Pariatur amet et magna aliqua commodo sint enim commodo consectetur adipisicing duis magna dolore amet.\r\nDeserunt et nulla eu laboris consequat veniam deserunt fugiat cupidatat adipisicing nulla dolore id. Aliqua dolor dolore nulla ea. Esse labore voluptate excepteur irure dolor dolore eiusmod pariatur sint qui. Fugiat id aliqua exercitation et sunt dolor laboris aliquip exercitation. Minim labore voluptate eu sint labore eu minim ut eu dolore velit incididunt culpa minim. Voluptate consequat elit id esse laboris duis anim laboris in sunt elit dolore aliqua.\r\n"
     },
     {

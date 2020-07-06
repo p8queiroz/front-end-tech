@@ -1,33 +1,27 @@
-import React, { useState } from 'react';
+import React from 'react';
 import CardQuestion from '../card/CardQuestion';
+import QuestionFilter from '../questionFilter/QuestionFilter';
 import './QuestionList.css';
 
-const QuestionList = ({ questions }) => {
+const QuestionList = ({ _questions }) => {
+
+    const [questions, setQuestions] = React.useState(_questions);
 
     const handleSelect = (event) => {
-        const { target: { value } } = event; /******/
-        console.log(value);
+        const { target: { id, value } } = event;
+        localStorage.setItem(id, value);
+        filter();
+    }
+
+    const filter = () => {
+        let technology = localStorage.getItem('technology');
+        let level = localStorage.getItem('level');
+        setQuestions(_questions.filter(item => (technology ? item.technology === technology : true)).filter(item => (level ? item.level === level : true)));
     }
 
     return (
         <React.Fragment>
-            <div className="options">
-                <span>Technology</span>
-                <select title="Technology" onChange={handleSelect}>
-                    <option value=""></option>
-                    <option value="javascript">javascript</option>
-                    <option value="react">React</option>
-                    <option value="dotnet">.net</option>
-                </select>
-                <span>Level</span>
-                <select title="Technology">
-                    <option value=""></option>
-                    <option value="easy">easy</option>
-                    <option value="medium">medium</option>
-                    <option value="intermidiate">intermidiate</option>
-                    <option value="hard">hard</option>
-                </select>
-            </div>
+            <QuestionFilter callback={handleSelect}></QuestionFilter>
             <section className="cards">
                 {questions.map((question) =>
                     <CardQuestion key={question._id} question={question} />
