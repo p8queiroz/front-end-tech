@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 
-const Answer = ({ answer }) => {
+const Answer = ({ _answer }) => {
+
+    const answerhtml = () => {
+        return { __html: _answer };
+    }
 
     return (
         <React.Fragment>
-            {answer}
+            <div dangerouslySetInnerHTML={answerhtml()}></div>
         </React.Fragment>
     );
 }

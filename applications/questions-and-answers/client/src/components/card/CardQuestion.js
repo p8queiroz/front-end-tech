@@ -1,4 +1,5 @@
 import React from 'react';
+import Answer from '../answer/Answer';
 
 const CardQuestion = ({ question }) => {
 
@@ -11,9 +12,7 @@ const CardQuestion = ({ question }) => {
 
     const share = () => alert("share this question!");
 
-    const answerhtml = () => {
-        return { __html: answer };
-    }
+
 
     return (
         <React.Fragment>
@@ -40,7 +39,7 @@ const CardQuestion = ({ question }) => {
                         </div>
                     </div>
                     <div className={'answer' + (isOpened ? ' active' : '')}>
-                        <div dangerouslySetInnerHTML={answerhtml()}></div>
+                        <Answer _answer={answer}></Answer>
                     </div>
                 </div>
             </div>

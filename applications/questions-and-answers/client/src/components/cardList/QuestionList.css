@@ -28,8 +28,13 @@
     -webkit-transition: -webkit-transform 5s ease;
     height: 10%;
     padding: 2rem;
+    word-wrap: break-word;
 }
 
+.card .answer.active img {
+    max-width: 100%;
+    height: auto;
+}
 
 
 
