@@ -1,39 +1,34 @@
 import React from 'react';
+import Select from './select/Select';
 
-const QuestionFilter = ({ callback }) => {
+const QuestionFilter = ({ callbackfilter }) => {
+
+    const [clear, setClear] = React.useState(false);
+
+    const clearfunction = () => {
+        localStorage.setItem('select-filter-first', '');
+        localStorage.setItem('select-filter-second', '');
+        callbackfilter(true);
+        setClear(true);
+    }
+
+    React.useEffect(() => {
+        setClear(false);
+    }, [clear]);
+
+    let optionsFirst = ["", "javascript", "react", ".net"];
+    let optionsSecond = ["", "easy", "medium", "intermidiate", "hard"];
 
     return (
-        <div className="filters">
-            <div>
-                <span>Technology:</span>
-                <select id="select-filter-first" onChange={callback}>
-                    <option value=""></option>
-                    <option value="javascript">javascript</option>
-                    <option value="react">React</option>
-                    <option value="dotnet">.net</option>
-                </select>
+        <React.Fragment>
+            <div className="filters">
+                {!clear && <Select name="Technology" id="select-filter-first" options={optionsFirst} callbackfilter={callbackfilter} ></Select>}
+                {!clear && <Select name="Level" id="select-filter-second" options={optionsSecond} callbackfilter={callbackfilter}></Select>}
+                <div onClick={clearfunction}>
+                    <div className="trash icon"></div>
+                </div>
             </div>
-            {/*<div>
-                <span>Category:</span>
-                <select id="category" onChange={callback}>
-                    <option value=""></option>
-                    <option value="easy">easy</option>
-                    <option value="medium">medium</option>
-                    <option value="intermidiate">intermidiate</option>
-                    <option value="hard">hard</option>
-                </select>
-            </div>*/}
-            <div>
-                <span>Level:</span>
-                <select id="select-filter-second" onChange={callback}>
-                    <option value=""></option>
-                    <option value="easy">easy</option>
-                    <option value="medium">medium</option>
-                    <option value="intermidiate">intermidiate</option>
-                    <option value="hard">hard</option>
-                </select>
-            </div>
-        </div >
+        </React.Fragment>
     )
 };
 

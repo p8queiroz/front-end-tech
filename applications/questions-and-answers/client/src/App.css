@@ -80,14 +80,21 @@ span {
 }
 
 
+
+
+
+/**************************Filters*/
+
 .container .filters {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
 
+
+
 .container .filters div{
-  padding: .2rem;
+  padding: .5rem;
 }
 
 .container .filters div select::-ms-expand {
@@ -113,6 +120,59 @@ span {
 .container .filters div span{
   padding-right: 1rem;
 }
+
+
+
+.container .filters .trash.icon {
+    color: rgba(169, 7, 233);
+    position: absolute;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    width: 0.8rem;
+    height: .8rem;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    border-radius: 0 0 2px 2px;
+}
+
+.container .filters .trash.icon:before {
+    content: '';
+    position: absolute;
+    left: -0.23rem;
+    top: -.1rem;
+    width: 1.5rem;
+    height: 1px;
+    background-color: currentColor;
+}
+
+.container .filters .trash.icon:after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: -5px;
+    width: 7px;
+    height: 2px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    border-radius: 4px 4px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

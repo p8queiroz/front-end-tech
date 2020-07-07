@@ -7,12 +7,6 @@ const QuestionList = ({ _questions }) => {
 
     const [questions, setQuestions] = React.useState(_questions);
 
-    const handleSelect = (event) => {
-        const { target: { id, value } } = event;
-        localStorage.setItem(id, value);
-        filter();
-    }
-
     const filter = () => {
         let technology = localStorage.getItem('select-filter-first');
         let level = localStorage.getItem('select-filter-second');
@@ -21,7 +15,7 @@ const QuestionList = ({ _questions }) => {
 
     return (
         <React.Fragment>
-            <QuestionFilter callback={handleSelect}></QuestionFilter>
+            <QuestionFilter callbackfilter={filter} ></QuestionFilter>
             <section className="cards">
                 {questions.map((question) =>
                     <Question key={question.id} question={question} />
