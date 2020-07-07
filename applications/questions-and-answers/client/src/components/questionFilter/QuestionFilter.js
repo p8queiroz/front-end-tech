@@ -6,7 +6,7 @@ const QuestionFilter = ({ callback }) => {
         <div className="filters">
             <div>
                 <span>Technology:</span>
-                <select id="technology" onChange={callback}>
+                <select id="select-filter-first" onChange={callback}>
                     <option value=""></option>
                     <option value="javascript">javascript</option>
                     <option value="react">React</option>
@@ -25,7 +25,7 @@ const QuestionFilter = ({ callback }) => {
             </div>*/}
             <div>
                 <span>Level:</span>
-                <select id="level" onChange={callback}>
+                <select id="select-filter-second" onChange={callback}>
                     <option value=""></option>
                     <option value="easy">easy</option>
                     <option value="medium">medium</option>

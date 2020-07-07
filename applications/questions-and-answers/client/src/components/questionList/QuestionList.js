@@ -14,8 +14,8 @@ const QuestionList = ({ _questions }) => {
     }
 
     const filter = () => {
-        let technology = localStorage.getItem('technology');
-        let level = localStorage.getItem('level');
+        let technology = localStorage.getItem('select-filter-first');
+        let level = localStorage.getItem('select-filter-second');
         setQuestions(_questions.filter(item => (technology ? item.technology === technology : true)).filter(item => (level ? item.level === level : true)));
     }
 
