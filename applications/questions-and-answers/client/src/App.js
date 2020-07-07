@@ -9,6 +9,7 @@ function App() {
 
   const [questions, setQuestion] = React.useState([]);
   const [isLoading, setLoading] = React.useState(true);
+  const [siteInfo, setSiteInfo] = React.useState({});
 
   useEffect(() => {
 
@@ -21,19 +22,27 @@ function App() {
       }
     };
 
-    fetch('http://quizzertech.com/system/wp-json/application-api/v1/om-question', init)
+    fetch('http://quizzertech.com/system/wp-json', init)
       .then(response => response.json())
       .then(data => {
-        setQuestion(data);
-        setLoading(false);
+        setSiteInfo({ title: data.name, description: data.description })
+        fetch('http://quizzertech.com/system/wp-json/application-api/v1/om-question', init)
+          .then(response => response.json())
+          .then(data => {
+            setQuestion(data);
+            setLoading(false);
+          })
+          .catch((error) => console.log(error))
+
       })
-      .catch((error) => console.log(error))
+
   }, []);
 
   return (
     <div className="App">
       <header className="App-header">
-        <h1>I.T. Questions and answers for interview / certification</h1>
+        <h1>{siteInfo.title ? siteInfo.title : ''}</h1>
+        <span>{siteInfo.description ? siteInfo.description : ''}</span>
       </header>
       <section className="container">
         {
