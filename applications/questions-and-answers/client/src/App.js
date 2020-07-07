@@ -3,6 +3,7 @@ import './App.css';
 //import data from './data/data';
 import QuestionList from './components/questionList/QuestionList';
 import Footer from './components/footer/Footer';
+import Loader from './components/loader/Loader';
 
 function App() {
 
@@ -35,8 +36,9 @@ function App() {
         <h1>I.T. Questions and answers for interview / certification</h1>
       </header>
       <section className="container">
-        {!isLoading &&
-          <QuestionList _questions={questions} />}
+        {
+          isLoading ? <Loader /> : <QuestionList _questions={questions} />
+        }
       </section>
       <footer>
         <Footer />

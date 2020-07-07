@@ -30,7 +30,7 @@ const Question = ({ question }) => {
                         </div>
                         <p dangerouslySetInnerHTML={descriptionhtml()}></p>
                     </div>
-                    <div className="options">
+                    <div className={'options' + (isOpened ? ' active' : '')}>
                         <div className="answer-option" onClick={toggle}>
                             <div className="chat icon"></div>
                         </div>
