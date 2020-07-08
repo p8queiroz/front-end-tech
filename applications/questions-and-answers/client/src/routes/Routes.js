@@ -1,20 +1,17 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-/*import Signup from './../Components/Signup/Signup';
-import Post from './../Components/Post/Post';
-import Leaderboards from './../Components/Leaderboards/Leaderboards';
-import MyAchievements from './../Components/MyAchievements/MyAchievements';
-import CreatePost from './../Components/CreatePost/CreatePost';
-import Home from './../Components/Home/Home';
-import Login from './../Components/Login/Login';*/
-
 import Home from '../pages/Home';
+import Github from '../pages/Github';
+import About from '../pages/About';
+
 
 const Routes = () => (
-  <div>
+  <React.Fragment>
     <Route exact path="/" component={Home} />
     <Route path="/home" component={Home} />
-  </div>
+    <Route path="/about" component={About} />
+    <Route path="/github" component={Github} />
+  </React.Fragment>
 );
 
 export default Routes;

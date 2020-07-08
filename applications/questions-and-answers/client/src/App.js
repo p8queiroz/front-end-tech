@@ -12,7 +12,6 @@ const customHistory = createBrowserHistory({ basename: '/' });
 
 function App() {
 
-  //const [isLoading, setLoading] = React.useState(true);
   const [siteInfo, setSiteInfo] = React.useState({});
 
   useEffect(() => {
@@ -30,34 +29,22 @@ function App() {
       .then(response => response.json())
       .then(data => {
         setSiteInfo({ title: data.name, description: data.description })
-        fetch('http://quizzertech.com/system/wp-json/application-api/v1/om-question', init)
-          .then(response => response.json())
-          .then(data => {
-            //  setQuestion(data);
-            //   setLoading(false);
-          })
-          .catch((error) => console.log(error))
       })
-
   }, []);
 
   return (
     <div className="App">
-      <div><Menu></Menu></div>
-      <div className="login-status"><button>teste</button></div>
-      <header className="App-header">
-        <h1>{siteInfo.title ? siteInfo.title : ''}</h1>
-        <span>{siteInfo.description ? siteInfo.description : ''}</span>
-      </header>
-      <section className="container">
-        {/*
-          isLoading ? <Loader /> : <Home _questions={questions} />
-        */}
-        <Router history={customHistory}>
+      <Router history={customHistory}>
+        <div><Menu></Menu></div>
+        <div className="login-status">=D</div>
+        <header className="App-header">
+          <h1>{siteInfo.title ? siteInfo.title : ''}</h1>
+          <span>{siteInfo.description ? siteInfo.description : ''}</span>
+        </header>
+        <section className="container">
           <Routes />
-        </Router>
-
-      </section>
+        </section>
+      </Router>
       <footer>
         <Footer />
       </footer>
