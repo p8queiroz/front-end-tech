@@ -34,3 +34,13 @@ Hmtl code generator:
 
 For future review:
 https://blog.bitsrc.io/how-to-implement-smooth-transitions-in-react-bd0497b06b8
+
+
+
+
+layouts interessantes:
+https://codepen.io/iamturner/pen/RaqoPX
+
+
+
+

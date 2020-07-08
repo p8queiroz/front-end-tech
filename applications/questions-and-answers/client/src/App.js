@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './App.css';
 //import data from './data/data';
 import QuestionList from './components/questionList/QuestionList';
+import Menu from './components/menu/Menu';
 import Footer from './components/footer/Footer';
 import Loader from './components/loader/Loader';
 
@@ -40,6 +41,7 @@ function App() {
 
   return (
     <div className="App">
+      <Menu></Menu>
       <header className="App-header">
         <h1>{siteInfo.title ? siteInfo.title : ''}</h1>
         <span>{siteInfo.description ? siteInfo.description : ''}</span>
