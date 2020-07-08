@@ -12,6 +12,7 @@ const Menu = () => {
     }
 
     const links = [
+        "Home",
         "about",
         "favorits",
         "contact",
@@ -24,9 +25,9 @@ const Menu = () => {
             <div className="side-nav-wrapper">
                 <div>
                     <div id="side-bar-nav" className="sidenav">
-                        <a href="#" className="closebtn" onClick={close}>&times;</a>
+                        <a href="/#" className="closebtn" onClick={close}>&times;</a>
                         {
-                            links.map((item) => <a key={`side-bar-nav-${item}`} href="#">{item}</a>)
+                            links.map((item) => <a key={`side-bar-nav-${item}`} href="/#">{item}</a>)
                         }
                     </div>
                 </div>

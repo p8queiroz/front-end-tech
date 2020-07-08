@@ -2,10 +2,20 @@
   text-align: center;
 }
 
+
+.App .login-status{ 
+  float: right;
+  padding: 1rem;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+
+
+
 
 /***************************************loader*/
 .lds-facebook {

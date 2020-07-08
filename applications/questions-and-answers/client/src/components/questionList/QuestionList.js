@@ -17,7 +17,7 @@ const QuestionList = ({ _questions }) => {
         <React.Fragment>
             <QuestionFilter callbackfilter={filter} ></QuestionFilter>
             <section className="cards">
-                {questions.map((question) =>
+                {questions && questions.map((question) =>
                     <Question key={question.id} question={question} />
                 )}
             </section>
