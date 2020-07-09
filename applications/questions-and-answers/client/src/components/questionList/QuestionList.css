@@ -8,7 +8,7 @@
 
 .card:focus,
 .card:hover{
-    border: 1px solid rgba(169, 7, 233);;
+    border: 1px solid rgba(169, 7, 233);
 }
 
 .card .content {

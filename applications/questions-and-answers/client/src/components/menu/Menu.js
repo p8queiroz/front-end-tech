@@ -20,7 +20,7 @@ const Menu = () => {
         { title: "About", to: "/about" },
         { title: "Favorites", to: "/about" },
         { title: "Contact", to: "/about" },
-        { title: "Login", to: "/about" },
+        { title: "Login", to: "/login" },
         { title: "GitHub", to: "/github" }
     ];
 
