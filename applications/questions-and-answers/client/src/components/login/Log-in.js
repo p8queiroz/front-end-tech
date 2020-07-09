@@ -2,16 +2,18 @@ import React from 'react';
 import { useInput } from '../../utils/hooks/useInput';
 import './Login.css';
 import { login } from '../../services/Login';
+import { useHistory } from "react-router-dom";
 
 const Login = () => {
+
+    let history = useHistory();
 
     const { value: userName, bind: bindUserName, reset: resetUserName } = useInput('');
     const { value: pw, bind: bindPw, reset: resetPassword } = useInput('');
 
     const handleLogin = (evt) => {
         evt.preventDefault();
-
-        login({ username: userName, password: pw }).then((data) => console.log(data));
+        login({ username: userName, password: pw }).then((() => history.push('/')));
         resetUserName();
         resetPassword();
     }
