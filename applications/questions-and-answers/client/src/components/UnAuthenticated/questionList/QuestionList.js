@@ -4,7 +4,6 @@ import Loader from '../loader/Loader';
 import QuestionFilter from '../questionFilter/QuestionFilter';
 import './QuestionList.css';
 
-
 const QuestionList = () => {
 
     const [isLoading, setLoading] = React.useState(true);

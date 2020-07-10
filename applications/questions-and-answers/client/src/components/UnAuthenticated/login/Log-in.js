@@ -1,7 +1,7 @@
 import React from 'react';
-import { useInput } from '../../utils/hooks/useInput';
+import { useInput } from '../../../utils/hooks/useInput';
 import './Login.css';
-import { login } from '../../services/Login';
+import { login } from '../../../services/Login';
 import { useHistory } from "react-router-dom";
 
 const Login = () => {

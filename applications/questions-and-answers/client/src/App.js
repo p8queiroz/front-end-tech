@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './App.css';
 //import data from './data/data';
 //import Home from './pages/Home';
-import Menu from './components/menu/Menu';
+import Menu from './components/UnAuthenticated/menu/Menu';
 import Footer from './components/footer/Footer';
 //import Loader from './components/loader/Loader';
 import Routes from './routes/Routes';

@@ -1,5 +1,5 @@
 import React from 'react';
-import QuestionList from '../components/questionList/QuestionList';
+import QuestionList from '../components/UnAuthenticated/questionList/QuestionList';
 
 const HomePage = ({ _questions }) => {
     return (
