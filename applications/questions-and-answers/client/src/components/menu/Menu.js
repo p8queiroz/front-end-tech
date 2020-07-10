@@ -18,7 +18,7 @@ const Menu = () => {
     const links = [
         { title: "Home", to: "/home" },
         { title: "About", to: "/about" },
-        { title: "Favorites", to: "/about" },
+        { title: "Favorites", to: "/favorites" },
         { title: "Contact", to: "/about" },
         { title: "Login", to: "/login" },
         { title: "GitHub", to: "/github" }
