@@ -1,0 +1,216 @@
+.App {
+  text-align: center;
+}
+
+
+.App .login-status{ 
+  float: right;
+  padding: 1rem;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+
+
+
+/***************************************loader*/
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background:rgba(169, 7, 233);
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #ffffff;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+/*typography*/
+h1 { 
+  font-size: 1.6em;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+
+span {
+  font-size: 1rem;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+
+
+
+
+/**************************Filters*/
+
+.container .filters {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+
+
+.container .filters div{
+  padding: .5rem;
+}
+
+.container .filters div select::-ms-expand {
+  display: none;
+}
+.container .filters div select {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0.5em 2em 0.5em 0.5em;
+  border: 1px solid #eee;
+  font: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position: right 15px top 1em, right 10px top 1em;
+  background-size: 5px 5px, 5px 5px;
+}
+
+.container .filters div span{
+  padding-right: 1rem;
+}
+
+
+
+.container .filters .trash.icon {
+    color: rgba(169, 7, 233);
+    position: absolute;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    width: 0.8rem;
+    height: .8rem;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    border-radius: 0 0 2px 2px;
+}
+
+.container .filters .trash.icon:before {
+    content: '';
+    position: absolute;
+    left: -0.23rem;
+    top: -.1rem;
+    width: 1.5rem;
+    height: 1px;
+    background-color: currentColor;
+}
+
+.container .filters .trash.icon:after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: -5px;
+    width: 7px;
+    height: 2px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    border-radius: 4px 4px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.App footer{
+  display: flex;
+  z-index: 10;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ccc;
+  color:white;
+  text-align: center;
+}
+
+.App footer div{
+  font-size: 0.7rem;
+  padding: 0 2rem 0 2rem;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

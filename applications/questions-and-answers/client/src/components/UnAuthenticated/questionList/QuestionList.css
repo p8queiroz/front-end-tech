@@ -1,0 +1,196 @@
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    margin: 1rem;
+}
+
+.card:focus,
+.card:hover{
+    border: 1px solid rgba(169, 7, 233);
+}
+
+.card .content {
+    flex: 1 1 auto;
+    position: relative;
+}
+
+
+
+/**********************************************answer css*/
+.card .answer {
+  display: none;
+}
+
+.card .answer.active {
+    display: block;
+    -webkit-transition: -webkit-transform 5s ease;
+    height: 10%;
+    padding: 2rem;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.card .answer.active img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/**********************************************question css*/
+.card .content .question {
+    margin: 0;
+}
+
+.card .content .question p {
+    margin: 0;
+    padding: 1rem;
+    padding-left: 1.6rem;
+    text-align: justify;
+    font-size: .9rem;
+    word-wrap: break-word;
+}
+
+.card .content .question p img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card .content .question.active,
+.card .content .question:hover,
+.card .content .question:focus {
+   /* background-color: rgba(169, 7, 233);*/
+    margin: 0;
+}
+
+/*
+.card .content .question.active p,
+.card .content .question:hover p,
+.card .content .question:focus p {
+    color: white;
+}*/
+
+
+.card .content .question .circle-container {
+    transform: translateX(-50%);
+    position: absolute;
+    top: 1.8rem;
+}
+
+.card .content .question .circle-container .outer {
+    background-color:white;
+    width:3rem;
+    height:3rem;
+    position:relative;
+}
+
+.card .content .question .circle-container .inner {
+    background-color: rgba(169, 7, 233);
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    position: relative;
+}
+
+.card .content .question .circle-container .circle {
+    border-radius: 50%; 
+}
+
+.card .content .question .circle-container .circle .question-mark{
+    position: relative;
+    top: 0.5rem;
+    color: white;
+}
+
+.card .content .options {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #ccc;
+}
+
+.card .content .options.active {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid  rgba(169, 7, 233);
+}
+
+.card .content .options .answer-option {
+    padding-bottom: 1.4rem;
+}
+
+.card .content .options .answer-option .chat.icon {
+    color: #000;
+    position: absolute;
+    margin-left: 2px;
+    margin-top: 4px;
+    width: 15px;
+    height: 10px;
+    border: solid 1px currentColor;
+    border-radius: 2px;
+  }
+
+  .card .content .options .answer-option .chat.icon:before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 0.39rem;
+    width: 4px;
+    height: 4px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background-color: white;
+    border-bottom: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+
+
+  
+.card .content .options .social {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*twitter icon*/
+.card .content .options .social .twitter .retweet.icon {
+    color: #000;
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 5px;
+    width: 13px;
+    height: 9px;
+    border-radius: 1px;
+    border: solid 1px currentColor;
+  }
+  
+  .card .content .options .social .twitter .retweet.icon:before {
+    content: '';
+    position: absolute;
+    left: -3px;
+    top: -2px;
+    width: 0;
+    height: 0;
+    border-top: solid 3px white;
+    border-bottom: solid 3px currentColor;
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+  }
+  
+  .card .content .options .social .twitter .retweet.icon:after {
+    content: '';
+    position: absolute;
+    right: -3px;
+    bottom: -2px;
+    width: 0;
+    height: 0;
+    border-top: solid 3px currentColor;
+    border-bottom: solid 3px white;
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+  }
+  
+  

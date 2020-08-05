@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900'); 
+
+/*
+
+  16px	1.0000em	100.00%
+  https://youtu.be/-D6LLKt89mI?t=1049
+
+*/
+
+/*==========================================================General*/
+* {
+  box-sizing: border-box; /*it facilitates working with padding*/
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*avoids text to touch the screen */
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*==========================================================typography*/
+
+h1 {
+  font-weight: 300;
+  font-size: 1.7rem;
+  margin-top: 0; /*added after changing the values in the home screen*/
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5em;
+  font-weight: 900;
+  margin-top: 0;
+}
+
+.title span {
+  font-weight: 300;
+  display: block;
+  font-size: .9em; /*percetage related to the parent*/
+}
+
+@media(min-width: 53rem) {
+  .title {
+    font-size: 3em;
+  }
+}
+
+
+/*==========================================================button*/
+
+.button {
+  display: inline-block; /*if dont, the padding dont add to the height, the items will be 'merge' to each other*/
+  font-size: 1.15rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-style: 2px;
+  border-style: solid;
+  padding: 0 1.17em;
+}
+
+.button-primary {
+  color: #00ff6c;
+  border-color: #00ff6c;
+}
+
+.button-primary:focus,
+.button-primary:hover  {
+  background: #00ff6c;
+  color: #232323
+}
+
+@media(min-width: 53rem) {
+  .button {
+    font-size: 1.5rem;
+  }
+}
+
+/*==========================================================header*/
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 1em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0;
+}
+
+
+nav a {
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8em;
+  color: #fff;
+  padding: .7em;
+}
+
+nav a:hover, 
+nav a:focus {
+  color: #ddd;
+}
+
+@media(min-width: 53rem) {
+
+  /*for bigger screens, make the logo float left and the nav float right*/
+  
+  .logo {
+    float: left;
+  }
+
+  nav {
+    float: right;
+  }
+
+}
+
+
+/*==========================================================home*/
+.home {
+  padding: 10em 0;
+  background-image:url(https://singularityhub.com/wp-content/uploads/2019/07/vintage-retro-human-heart-future-shutterstock-663103276-1-1068x601.jpg) ;
+  color: #fff;
+  background-position: cover;
+  background-position: center;
+}
+
+@media(min-width: 53rem) {
+  
+  .home {
+    height: 100vh; /*to position the element vertically*/
+    padding-top: 35vh;
+  }
+
+}
+
+
+/*==========================================================home about*/
+
+.about-textbox {
+  background-color: #232323;
+  padding: 4em;
+  width: 100vw; /*total size of the view*/
+  margin-left: -2.7%;
+  outline: 2px solid #00ff6c; /*it works as the border property. We can offset them either outwards or inwards and so I've offset it inwards*/
+  outline-offset: -2.5em;
+  color: #fff;
+  position: relative; /*this is used for setting the title above the border*/
+}
+
+.about-textbox h1 {
+ color:  #00ff6c;
+ position: absolute;
+ top: .75em;
+ background-color: #232323;
+ padding: 0 .145em;
+ /*the properties bellow are a trick to keep the h1 always in the middle*/
+ left: 50%;
+ transform: translateX(-50%);
+}
+
+@media (min-width: 25rem) {
+  h1 {
+    font-size: 2rem;
+  }
+  .about-textbox h1 {
+    top: .6em;
+    padding: 0 .35em;
+  }
+}
+
+@media (min-width: 60rem) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .about-textbox h1 {
+    top: .3em;
+    padding: 0 .6em;
+  }
+}
+
+/*footer*/
