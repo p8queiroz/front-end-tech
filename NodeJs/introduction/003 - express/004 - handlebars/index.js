@@ -1,9 +1,16 @@
 const express = require("express");
 const app = express();
 const path = __dirname;
+const handlebars = require("express-handlebars");
+
+
+//config
+//template hand
+app.engine('handlebars', handlebars({ defaultLayout: 'main' }))
+app.set('view engine', 'handlebars')
 
 app.get("/", (req, res) => {
-    res.sendFile(`${path}/files/index.html`);
+    res.render('form');
 })
 
 app.get("/about", (req, res) => {
