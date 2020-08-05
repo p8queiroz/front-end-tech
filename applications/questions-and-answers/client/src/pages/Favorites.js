@@ -9,7 +9,7 @@ const Favorites = () => {
 
     React.useEffect(() => {
         if (checkToken()) history.push('/login');
-    }, []);
+    }, [history]);
 
     return (
         <React.Fragment>

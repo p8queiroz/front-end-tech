@@ -9,7 +9,5 @@ export const setToken = token => localStorage.setItem(ACCESS_TOKEN_KEY, token);
 export const getTokenBearer = () => `Bearer ${getToken()}`;
 
 export const checkToken = () => {
-  if (!getToken() && window.location.href.indexOf('/') !== -1) {
-    window.location.href = '/login';
-  }
+  return (!getToken() && window.location.href.indexOf('/') !== -1);
 }

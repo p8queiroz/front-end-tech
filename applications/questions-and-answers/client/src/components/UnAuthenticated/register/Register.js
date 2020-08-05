@@ -2,29 +2,25 @@ import React from 'react';
 import { useInput } from '../../../utils/hooks/useInput';
 import './Login.css';
 import { login } from '../../../services/Login';
-import { register } from '../../../services/Register';
-
 import { useHistory } from "react-router-dom";
 
-const Login = () => {
+const Register = () => {
 
     let history = useHistory();
 
-    const { value: userEmail, bind: bindUserName, reset: resetEmail } = useInput('');
+    const { value: userName, bind: bindUserName, reset: resetUserName } = useInput('');
     const { value: pw, bind: bindPw, reset: resetPassword } = useInput('');
 
     const handleLogin = (evt) => {
         evt.preventDefault();
-        login({ username: userEmail, password: pw }).then((() => history.push('/')));
-        resetEmail();
+        login({ username: userName, password: pw }).then((() => history.push('/')));
+        resetUserName();
         resetPassword();
     }
 
     const handleRegister = (evt) => {
         evt.preventDefault();
-        register({ email: userEmail, password: pw }).then((() => history.push('/')));
-        resetEmail();
-        resetPassword();
+        alert(`reg -Submitting Name ${userName} - ${pw}`);
     }
 
     return (
@@ -50,4 +46,4 @@ const Login = () => {
         </React.Fragment>
     );
 }
-export default Login;
+export default Register;
