@@ -4,8 +4,13 @@ const sequelize = new Sequelize("sm_paulodev", "root", "vertrigo", {
     dialect: "mysql"
 })
 
+module.exports = {
+    Sequelize: Sequelize,
+    sequelize: sequelize
+}
 
-const Post = sequelize.define(
+
+/*const Post = sequelize.define(
     'posts', {
     Title: {
         type: Sequelize.STRING
@@ -38,4 +43,4 @@ Comments.sync({ force: true });
 
 sequelize.authenticate()
     .then(() => console.log("*********logado********"))
-    .catch((error) => console.log("*********error********", error))
+    .catch((error) => console.log("*********error********", error))*/
