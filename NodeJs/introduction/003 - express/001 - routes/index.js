@@ -6,7 +6,6 @@ app.get("/product/:category/:name", (req, res) => {
     res.send(req.params);
 })
 
-
 app.get("/product/:status", (req, res) => {
     res.send("product status ...");
 })
