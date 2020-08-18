@@ -1,7 +1,18 @@
 //components
 
-Create react app:
+//client
 1. npx create-react-app my-app
 
 2. npm install @aspnet/signalr-client
+
+//server
+1. dotnet new webapp -o SignalRChat
+2. dotnet tool install -g Microsoft.Web.LibraryManager.Cli
+3. libman install @microsoft/signalr@latest -p unpkg -d wwwroot/js/signalr --files dist/browser/signalr.js --files dist/browser/signalr.min.js
+4. create the hub class
+The ChatHub class inherits from the SignalR Hub class. The Hub class manages connections, groups, and messaging.
+SignalR code is asynchronous to provide maximum scalability.
+5. Add the proper configuration/dependency injection 
+6. Create the client side code 
+7. Run the app: dotnet watch run -p SignalRChat.csproj
 

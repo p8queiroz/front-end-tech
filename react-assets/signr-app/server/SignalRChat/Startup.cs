@@ -8,6 +8,11 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+//[here] The SignalR server must be configured to pass SignalR requests to SignalR. These changes add SignalR to the ASP.NET Core dependency injection and routing systems.
+
+
+using SignalRChat.Hubs;
+
 
 namespace SignalRChat
 {
@@ -24,6 +29,8 @@ namespace SignalRChat
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            //[here]
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +57,9 @@ namespace SignalRChat
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                //[here]
+                endpoints.MapHub<ChatHub>("/chathub");
+
             });
         }
     }
