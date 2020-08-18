@@ -34,7 +34,9 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
+**/node_modules/**
+**/bin/**
+**/obj/**
 jspm_packages/
 
 # Build android ios packages
@@ -66,6 +68,9 @@ typings/
 
 # dependencies
 /node_modules
+
+bin/
+obj/
 
 # testing
 /coverage
