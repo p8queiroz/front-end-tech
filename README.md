@@ -1,15 +1,17 @@
-# Front End Resourses (JavaScript - TypeScript + React JS + CSS + HTML + NodeJs + Express + Ionic)
+# Front End Resourses (JavaScript + TypeScript + React JS + CSS + HTML + NodeJs + Express + Ionic)
 
 Hello, everyone! 
 
 
-In this repository, you'll have access to a variety of nice and cool stuff that you can learn for modern **web/mobile development. **  .  
+In this repository, you'll have access to a variety of nice and cool stuff that you can learn for **modern web/mobile development**. 
 
- For each resource, there's the repository along with the code and explanations. I'll work a little bit more to have these solutions available for you guys in a better way, but for now, I hope you enjoy it and have fun while learning with me using these resources as a reference. 
+ For each resource, there's the **repository** along with the **code and explanations**. I'll work a little bit more to have these solutions available for you guys in a better way, but for now, I hope you enjoy it and have fun while learning with me using these resources as a reference. 
 
 These techs are mainly the ones I've been working throughout my career as Web Developer
  
-You can find me on **linkedin/insta/twitter** using this name: **p8queiroz**. I hope to see you guys there.
+You can find me on **linkedin/insta/twitter** using this name: **p8queiroz**.
+
+ I hope to see you guys there.
 
 # Files Structure
 
