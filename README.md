@@ -18,9 +18,9 @@ You can find me on **linkedin/insta/twitter** using this name: **p8queiroz**.
 
 |Folder| Tech | comments
 |--|--|--|
-|NodeJs|nodeJs|Here you'll learn with me how to create a blog using Express. We'll also be using SQL database |
-|Applications|html/css/js|I'll show some cool apps mande with html/js|
-|html-pages|html/css/js|I'll show some cool pages mande with html/js and some cool css tricks|
+|NodeJs|nodeJs|Here you'll learn with me how to create a blog using Nodejs Express. We'll also be using SQL database |
+|Applications|html/css/js|I'll show you some cool apps made with html/js|
+|html-pages|html/css/js|I'll show you some cool pages made with html/js and some cool css tricks|
 |react-assets|React|Nice application using react|
 |react-assets/signalR| -React -.net core |Chat application using signalR hub|
 
