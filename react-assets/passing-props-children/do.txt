@@ -1,0 +1,3 @@
+//add here the example that can be found in cafezinho 
+//the approach to check the right answer for the question
+//          exercises.map((item) => item.Current && !spinner && <ExerciseCard checkAnswer={checkAnswer} key={item.Id}></ExerciseCard>)
