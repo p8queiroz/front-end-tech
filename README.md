@@ -1,4 +1,4 @@
-# Front End Resourses (JavaScript + TypeScript + React JS + CSS + HTML + NodeJs + Express + Ionic)
+# Front End Tech (JavaScript + TypeScript + React JS + CSS + HTML + NodeJs + Express + Ionic)
 
 Hello, everyone! 
 
