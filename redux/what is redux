@@ -1,0 +1,55 @@
+1. Predictable state management 
+
+You can use it in your client / server / native 
+
+The good thing is that you can use Redux with React and any other view library!
+
+Use Redux Toolkit
+
+1. Create a Redux App 
+- The recomended way: npx create-react-app application --template redux
+
+2. The whole state of your app is stored in an object tree inside a single store. The only way to change the state tree is to emit an action, an object describing what happened. To specify how the actions transform the state tree, you write pure reducers.
+
+3. In a typical Redux app, there is just a single store with a single root reducing function. As your app grows, you split the root reducer into smaller reducers independently operating on the different parts of the state tree. This is exactly like how there is just one root component in a React app, but it is composed out of many small components.
+
+## Let's code 
+
+1. You should make sure that you have the React and Redux DevTools extensions installed in your browser:
++Redux is more useful when:
+-You have large amounts of application state that are needed in many places in the app
+-The app state is updated frequently over time
+-The logic to update that state may be complex
+-The app has a medium or large-sized codebase, and might be worked on by many people
+https://redux.js.org/assets/images/one-way-data-flow-04fe46332c1ccb3497ecb04b94e55b97.png
+
+2. Using Hooks can be easy to understand and to manage data for some basica scenarios. But when the app is "big", 
+you can possible try to "lift up your app" like add the state to the parant component. This can be done and also might 
+work, but sounds not like professional. And you want to be professional, right?
+One way to solve this is to extract the shared state from the components, and put it into a centralized location outside the component tree. With this, our component tree becomes a big 
+"view", and any component can access the state or trigger actions, no matter where they are in the tree!
+we give our code more structure and maintainability.
+3. Redux expects that all state updates are done immutably (checkout the javascript section of this repository)
+
+4. Terminology:
+store       -> redux application state
+dispatch    -> store.dispatch({type: 'incremente'})
+state       -> the state of the app
+actions     -> object that describes the events that will be performed to the state
+reducers    -> it recieves the state and the action object. The actions executor.
+
+https://redux.js.org/assets/images/ReduxDataFlowDiagram-49fa8c3968371d9ef6f2a1486bd40a26.gif
+
+5. checkout the example and see the time travel debbuging and also the state changing. 
+
+6. A thunk is a specific kind of Redux function that can contain asynchronous logic. Thunks are written using two functions:
+
+7. Reading Data with useSelector#
+
+
+
+
+
+
+
+
