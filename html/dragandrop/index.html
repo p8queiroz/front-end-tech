@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+    .container {
+      width: 350px;
+      height: 70px;
+      padding: 10px;
+      border: 1px solid #aaaaaa;
+    }
+  </style>
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function setValue(ev) {
+      console.log("**");
+      //  ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drag(ev) {
+      console.log("####");
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+  </script>
+</head>
+
+<body>
+
+  <p>Here's a couple items:</p>
+  <div class="container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <br>
+  <div class="container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <br>
+  <div class="container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <br>
+
+  <br>
+  <span id="drag1" draggable="true" ondragstart="drag(event)">[ acordar ]</span>
+  <br>
+  <span id="drag2" draggable="true" onclick="setValue(event)" ondragstart="drag(event)">[ dormir ]</span>
+  <br>
+  <span id="drag3" draggable="true" onclick="setValue(event)" ondragstart="drag(event)">[ comer ]</span>
+  <br>
+  <span id="drag4" draggable="true" onclick="setValue(event)" ondragstart="drag(event)">[ correr ]</span>
+
+</body>
+
+</html>
