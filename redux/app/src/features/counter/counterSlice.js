@@ -4,6 +4,7 @@ export const counterSlice = createSlice({
   name: 'counter',
   initialState: {
     value: 0,
+    history: [0]
   },
   reducers: {
     increment: state => {
@@ -12,12 +13,15 @@ export const counterSlice = createSlice({
       // which detects changes to a "draft state" and produces a brand new
       // immutable state based off those changes
       state.value += 1;
+      state.history.push(state.value);
     },
     decrement: state => {
       state.value -= 1;
+      state.history.push(state.value);
     },
     incrementByAmount: (state, action) => {
       state.value += action.payload;
+      state.history.push(state.value);
     },
   },
 });
@@ -39,5 +43,7 @@ export const incrementAsync = amount => dispatch => {
 // the state. Selectors can also be defined inline where they're used instead of
 // in the slice file. For example: `useSelector((state) => state.counter.value)`
 export const selectCount = state => state.counter.value;
+export const selectHistory = state => state.counter.history;
+
 
 export default counterSlice.reducer;

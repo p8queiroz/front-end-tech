@@ -6,13 +6,15 @@ import {
   incrementByAmount,
   incrementAsync,
   selectCount,
+  selectHistory,
 } from './counterSlice';
 import styles from './Counter.module.css';
 
 export function Counter() {
   const count = useSelector(selectCount);
+  const history = useSelector(selectHistory);
   const dispatch = useDispatch();
-  const [incrementAmount, setIncrementAmount] = useState('2');
+  const [incrementAmount, setIncrementAmount] = useState('1');
 
   return (
     <div>
@@ -25,6 +27,8 @@ export function Counter() {
           +
         </button>
         <span className={styles.value}>{count}</span>
+
+
         <button
           className={styles.button}
           aria-label="Decrement value"
@@ -33,6 +37,8 @@ export function Counter() {
           -
         </button>
       </div>
+      <span>history: {history.join(', ')}</span>
+
       <div className={styles.row}>
         <input
           className={styles.textbox}
