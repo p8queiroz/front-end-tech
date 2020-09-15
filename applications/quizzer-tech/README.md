@@ -12,16 +12,24 @@ more to come on this!
 
 # Publishing the Ionic site to a Wordpress Site. 
 
-1. Add a style.css file with the content. The theme name property should be the same name of the theme folder:
+1. Add a style.css file with the content bellow (the theme name property should be the same name of the theme folder):
+```sh
 /*
 Theme Name: quizertechversao2
 */
-
+```
 2. Change the index.html file to index.php
 
 3. Add to all static file the wordpress prefix:
-<?php echo get_bloginfo('template_directory'); ?>
+
+```sh
+<?php echo get_bloginfo('template_directory'); ?
+```
 
 4. In the inline javascript file, also change the "static/js" path to:
-    4.1<input id="sitename" type="hidden" value="<?php echo get_bloginfo('template_directory'); ?>">
-	4.2 + document.getElementById("sitename").value + "/static/js/" +
+```sh
+    <input id="sitename" type="hidden" value="<?php echo get_bloginfo('template_directory'); ?>">
+```
+```sh
++ document.getElementById("sitename").value + "/static/js/" +
+```
