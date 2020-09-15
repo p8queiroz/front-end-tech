@@ -5,8 +5,8 @@ import { UserViewModel } from './user/user.state';
 
 const { Storage } = Plugins;
 
-const dataUrl = '/assets/data/data.json';
-const locationsUrl = '/assets/data/locations.json';
+//const dataUrl = '/assets/data/data.json';
+//const locationsUrl = '/assets/data/locations.json';
 
 const HAS_LOGGED_IN = 'hasLoggedIn';
 const HAS_SEEN_TUTORIAL = 'hasSeenTutorial';
@@ -25,14 +25,12 @@ export const getQuestions = async () => {
 
 export const getAppData = async () => {
   const response = await Promise.all([
-    fetch(dataUrl),
-    fetch(locationsUrl),
     getQuestions(),
   ]);
 
-  const responseDataQuestions = await response[2].json();
+  const responseDataQuestions = await response[0].json();
   const questions = responseDataQuestions as Question[];
-  const locations = await response[1].json() as Location[];
+  //const locations = await response[1].json() as Location[];
 
   const allTechs = questions
     .reduce((all, question) => all.concat(question.technology), [] as string[])
@@ -41,7 +39,6 @@ export const getAppData = async () => {
 
   const data = {
     questions,
-    locations,
     allTechs,
   }
 
@@ -85,7 +82,6 @@ export const setUsernameData = async (username?: string) => {
 }
 
 export const setUserTokenData = async (token?: string) => {
-  debugger;
   if (!token) {
     await Storage.remove({ key: TOKEN });
   } else {
@@ -94,7 +90,6 @@ export const setUserTokenData = async (token?: string) => {
 }
 
 export const setUserEmailData = async (email?: string) => {
-  debugger;
   if (!email) {
     await Storage.remove({ key: EMAIL });
   } else {
@@ -107,7 +102,6 @@ export const setLogarUsuarioData = async (userName: string, password: string) =>
   const login = `http://quizzertech.com/system/wp-json/jwt-auth/v1/token?username=${userName}&password=${password}`;
   const response = await Promise.all([
     fetch(login, requestInit)]);
-  debugger;
   const responseData = await response[0].json();
   return responseData;
 }
@@ -120,11 +114,3 @@ export const setUserData = async (user: UserViewModel) => {
   return responseData;
 }
 
-/*
-function parseSessions(schedule: Question) {
-const sessions: Session[] = [];
-  schedule.groups.forEach(g => {
-    g.sessions.forEach(s => sessions.push(s))
-  });
-  return sessions;
-}*/
