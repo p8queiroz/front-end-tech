@@ -1,0 +1,7 @@
+{
+  "name": "quizzer-application",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
