@@ -19,7 +19,7 @@ const requestInit = {
 }
 
 export const getQuestions = async () => {
-  const getQuestionsURL = `http://quizzertech.com/system/wp-json/application-api/v1/om-question`;
+  const getQuestionsURL = `http://quizzertech.com/wp-json/application-api/v1/om-question`;
   return fetch(getQuestionsURL);
 }
 
@@ -99,7 +99,7 @@ export const setUserEmailData = async (email?: string) => {
 
 
 export const setLogarUsuarioData = async (userName: string, password: string) => {
-  const login = `http://quizzertech.com/system/wp-json/jwt-auth/v1/token?username=${userName}&password=${password}`;
+  const login = `http://quizzertech.com/wp-json/jwt-auth/v1/token?username=${userName}&password=${password}`;
   const response = await Promise.all([
     fetch(login, requestInit)]);
   const responseData = await response[0].json();
@@ -107,7 +107,7 @@ export const setLogarUsuarioData = async (userName: string, password: string) =>
 }
 
 export const setUserData = async (user: UserViewModel) => {
-  const register = `http://quizzertech.com/system/wp-json/application-api/v1/user/?username=${user.username}&email=${user.email}&password=${user.password}`;
+  const register = `http://quizzertech.com/wp-json/application-api/v1/user/?username=${user.username}&email=${user.email}&password=${user.password}`;
   const response = await Promise.all([
     fetch(register, requestInit)]);
   const responseData = await response[0].json();

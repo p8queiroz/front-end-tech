@@ -1,6 +1,7 @@
 {
   "name": "quizzer-application",
   "version": "0.0.1",
+  "homepage": "/wp-content/themes/quizzertech",
   "private": true,
   "dependencies": {
     "@capacitor/core": "1.3.0",
