@@ -3,8 +3,8 @@ import React, { useState, useRef } from 'react';
 import { IonToolbar, IonContent, IonPage, IonButtons, IonTitle, IonMenuButton, IonSegment, IonSegmentButton, IonButton, IonIcon, IonSearchbar, IonRefresher, IonRefresherContent, IonToast, IonModal, IonHeader, getConfig } from '@ionic/react';
 import { options, search } from 'ionicons/icons';
 
-import QuestionList from '../components/QuestionList';
-import QuestionListFilter from '../components/QuestionListFilter';
+import QuestionList from '../components/Question/QuestionList';
+import QuestionListFilter from '../components/Question/QuestionListFilter';
 import './QuestionPage.scss'
 
 import ShareSocialFab from '../components/ShareSocialFab';

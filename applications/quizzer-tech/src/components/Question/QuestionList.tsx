@@ -1,9 +1,9 @@
 import { IonItemDivider, IonItemGroup, IonLabel, IonList, IonListHeader, IonAlert, AlertButton } from '@ionic/react';
 import React, { useState, useCallback } from 'react';
-import { Question } from '../models/Questions';
-import QuestionListItem from "./QuestionListItem";
-import { connect } from '../data/connect';
-import { addFavorite, removeFavorite } from '../data/questions/questions.actions';
+import { Question } from '../../models/Questions';
+import QuestionListItem from "../QuestionListItem";
+import { connect } from '../../data/connect';
+import { addFavorite, removeFavorite } from '../../data/questions/questions.actions';
 
 interface OwnProps {
   questions: Question[];

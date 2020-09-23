@@ -6,8 +6,8 @@ import { logoAngular, logoNodejs, logoJavascript, micSharp, logoIonic, logoReact
 
 import './QuestionListFilter.css'
 
-import { connect } from '../data/connect';
-import { updateFiltered } from '../data/questions/questions.actions';
+import { connect } from '../../data/connect';
+import { updateFiltered } from '../../data/questions/questions.actions';
 
 interface OwnProps {
   onDismissModal: () => void;
