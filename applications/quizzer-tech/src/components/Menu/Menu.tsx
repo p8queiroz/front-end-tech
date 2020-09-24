@@ -1,19 +1,14 @@
 import React from 'react';
 import { RouteComponentProps, withRouter, useLocation } from 'react-router';
-
 import { IonContent, IonIcon, IonItem, IonLabel, IonList, IonListHeader, IonMenu, IonMenuToggle, IonToggle } from '@ionic/react';
 import { newspaperOutline, hammer, moonOutline, help, informationCircleOutline, logIn, logOut, chatbox, colorFill, iceCream, person, personAdd } from 'ionicons/icons';
-
-import { connect } from '../data/connect';
-import { setDarkMode } from '../data/user/user.actions';
-
+import { connect } from '../../data/connect';
+import { setDarkMode } from '../../data/user/user.actions';
 import './Menu.css'
 
 const routes = {
   appPages: [
     { title: 'Questions', path: '/tabs/questions', icon: newspaperOutline },
-    //{ title: 'Speakers', path: '/tabs/speakers', icon: peopleOutline },
-    //{ title: 'Map', path: '/tabs/map', icon: mapOutline },
     { title: 'About', path: '/tabs/about', icon: informationCircleOutline }
   ],
   loggedInPages: [
@@ -23,8 +18,6 @@ const routes = {
     { title: 'Quiz', path: '/quiz', icon: iceCream },
     { title: 'Chat', path: '/chat', icon: chatbox },
     { title: 'Fill in', path: '/drag', icon: colorFill }
-
-
   ],
   loggedOutPages: [
     { title: 'Login', path: '/login', icon: logIn },
@@ -39,6 +32,7 @@ interface Pages {
   icon: string,
   routerDirection?: string
 }
+
 interface StateProps {
   darkMode: boolean;
   isAuthenticated: boolean;
