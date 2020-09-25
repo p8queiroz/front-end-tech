@@ -2,6 +2,7 @@ import { Plugins } from '@capacitor/core';
 import { Question } from '../models/Questions';
 import { Location } from '../models/Location';
 import { UserViewModel } from './user/user.state';
+import { API_URL } from '../util/constants';
 
 const { Storage } = Plugins;
 
@@ -19,7 +20,7 @@ const requestInit = {
 }
 
 export const getQuestions = async () => {
-  const getQuestionsURL = `http://quizzertech.com/wp-json/application-api/v1/om-question`;
+  const getQuestionsURL = `${API_URL}/om-question`;
   return fetch(getQuestionsURL);
 }
 
