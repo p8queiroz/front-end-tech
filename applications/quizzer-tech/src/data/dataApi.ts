@@ -2,7 +2,7 @@ import { Plugins } from '@capacitor/core';
 import { Question } from '../models/Questions';
 import { Location } from '../models/Location';
 import { UserViewModel } from './user/user.state';
-import { API_URL } from '../util/constants';
+import { API_URL } from '../config/constants';
 
 const { Storage } = Plugins;
 

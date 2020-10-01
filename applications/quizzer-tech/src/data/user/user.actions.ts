@@ -1,5 +1,5 @@
 import { getUserData, setIsLoggedInData, setUsernameData, setUserEmailData, setUserTokenData, setHasSeenTutorialData, setLogarUsuarioData, setUserData } from '../dataApi';
-import { ActionType } from '../../util/types';
+import { ActionType } from '../../config/types';
 import { UserState, UserViewModel } from './user.state';
 
 

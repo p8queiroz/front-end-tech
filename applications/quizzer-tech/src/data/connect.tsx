@@ -1,6 +1,6 @@
 import React, { useContext, useMemo } from 'react';
 import { AppContext } from './AppContext';
-import { DispatchObject } from '../util/types';
+import { DispatchObject } from '../config/types';
 import { AppState } from './state';
 
 interface ConnectParams<TOwnProps, TStateProps, TDispatchProps> {

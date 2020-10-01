@@ -70,8 +70,46 @@ const userObject = (sellTicket) => {
     }, {});
 }
 
-console.log(userObject(sellTicket))
+//console.log(userObject(sellTicket))
 
 
 
 /*Example 4: xxxxxx*/
+
+const array = [91, 4, 6, 24, 8, 7, 59, 3, 13, 0, 11, 98, 54, 23, 52, 87, 4];
+//console.log(array.sort((a, b) => a - b))
+
+const sortingReducer = (accumulator, value) => {
+    const nextIndex = accumulator.findIndex(i => value < i);
+    // console.log(nextIndex)
+    const index = nextIndex > -1 ? nextIndex : accumulator.length;
+    accumulator.splice(index, 0, value);
+    console.log(accumulator)
+    return accumulator;
+}
+const output = array.reduce(sortingReducer, []);
+//console.log(output)
+
+/*
+
+[91]
+[4, 91]
+[4, 6, 91]
+[4, 6, 24, 91]
+[]
+
+
+
+
+*/
+
+
+//Sorte array JS 
+/*The default ECMAScript sort is alphabetical, so a little magic is needed to sort an array in numerical order.
+*/
+
+//console.log(arr.map(item => parseInt(item)).sort())
+
+//console.log(arr.sort((a, b) => a - b))
+//console.log(arr.sort((a, b) => b - a))
+
