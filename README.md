@@ -26,3 +26,7 @@ You can find me on **linkedin/insta/twitter** using this name: **p8queiroz**.
 
 
 
+# Future Questions/Exercices
+
++ React animation inside Ionic (https://ionicframework.com/docs/utilities/animations)
+import { CreateAnimation, Animation } from '@ionic/react'; //this is wrong
