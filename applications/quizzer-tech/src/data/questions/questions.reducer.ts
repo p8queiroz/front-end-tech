@@ -10,7 +10,7 @@ export const questionReducer = (state: QuestionState, action: QuestionsActions):
       return { ...state, ...action.data };
     }
     case 'add-favorite': {
-      return { ...state, favorites: [...(state.favorites), action.questionId] };
+      return { ...state, favorites: [...(state.favorites), action.questionId] }; //action.questionId = payload
     }
     case 'remove-favorite': {
       return { ...state, favorites: [...(state.favorites).filter(x => x !== action.questionId)] };

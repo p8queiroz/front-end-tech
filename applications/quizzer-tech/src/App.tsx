@@ -55,7 +55,7 @@ interface IonicAppProps extends StateProps, DispatchProps { }
 const IonicApp: React.FC<IonicAppProps> = ({ darkMode, questions, setIsLoggedIn, setUsername, loadConfData, loadUserData }) => {
 
   useEffect(() => {
-    loadUserData();
+    loadUserData(); // TODO - start the application
     loadConfData();
     // eslint-disable-next-line
   }, []);
