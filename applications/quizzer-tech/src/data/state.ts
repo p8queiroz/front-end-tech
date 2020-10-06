@@ -1,17 +1,13 @@
 import { combineReducers } from './combineReducers';
-import { sessionsReducer } from './questions/questions.reducer';
+import { questionReducer } from './questions/questions.reducer';
 import { userReducer } from './user/user.reducer';
 
 export const initialState: AppState = {
   data: {
     questions: [],
-    sessions: [],
-    speakers: [],
     favorites: [],
-    locations: [],
     filteredTechs: [],
     allTechs: [],
-    mapCenterId: 0,
     loading: false,
     menuEnabled: true
   },
@@ -24,7 +20,7 @@ export const initialState: AppState = {
 };
 
 export const reducers = combineReducers({
-  data: sessionsReducer,
+  data: questionReducer,
   user: userReducer
 });
 

@@ -2,7 +2,6 @@ import { getUserData, setIsLoggedInData, setUsernameData, setUserEmailData, setU
 import { ActionType } from '../../config/types';
 import { UserState, UserViewModel } from './user.state';
 
-
 export const loadUserData = () => async (dispatch: React.Dispatch<any>) => {
   dispatch(setLoading(true));
   const data = await getUserData();
@@ -22,7 +21,6 @@ export const setData = (data: Partial<UserState>) => ({
 
 export const logoutUser = () => async (dispatch: React.Dispatch<any>) => {
   await setIsLoggedInData(false);
-
 };
 
 export const setIsLoggedIn = (loggedIn: boolean) => async (dispatch: React.Dispatch<any>) => {
@@ -43,9 +41,7 @@ export const setUsername = (username?: string) => async (dispatch: React.Dispatc
 
 export const setUserEmail = (email?: string) => async (dispatch: React.Dispatch<any>) => {
 
-  debugger;
   await setUserEmailData(email);
-
   return ({
     type: 'set-email',
     email
@@ -71,32 +67,23 @@ export const setUser = (user: UserViewModel) => async (dispatch: React.Dispatch<
   const { data } = response;
 
   if (data && data.status && data.status === 403) {
-    debugger
     await setIsLoggedInData(false);
   } else {
-    debugger
     setUserEmailData(user.email);
     setUsernameData(user.username);
     const responsel = await setLogarUsuarioData(user.email, user.password);
     const { data } = responsel;
     if (!(data && data.status && data.status === 403)) {
-      debugger;
       setUserTokenData(responsel.token);
     }
-
   }
-
-
   dispatch(setLoading(false));
-
 }
-
 
 export const setDarkMode = (darkMode: boolean) => ({
   type: 'set-dark-mode',
   darkMode
 } as const);
-
 
 export type UserActions =
   | ActionType<typeof setLoading>

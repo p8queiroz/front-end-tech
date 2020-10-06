@@ -5,7 +5,7 @@ import { AppState } from './state';
 const getQuestions = (state: AppState) => {
   return state.data.questions
 };
-export const getSpeakers = (state: AppState) => state.data.speakers;
+//export const getSpeakers = (state: AppState) => state.data.speakers;
 const getFilteredTechs = (state: AppState) => state.data.filteredTechs;
 const getFavoriteIds = (state: AppState) => state.data.favorites;
 const getSearchText = (state: AppState) => state.data.searchText;
@@ -59,7 +59,7 @@ export const favoritesQuestions = createSelector(
   }
 );
 
-export const mapCenter = (state: AppState) => {
+/*export const mapCenter = (state: AppState) => {
   const item = state.data.locations.find(l => l.id === state.data.mapCenterId);
   if (item == null) {
     return {
@@ -70,7 +70,7 @@ export const mapCenter = (state: AppState) => {
     };
   }
   return item;
-}
+}*/
 
 
 /*

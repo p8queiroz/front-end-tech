@@ -1,5 +1,5 @@
 import { getAppData } from '../dataApi';
-import { ActionType } from '../../util/types';
+import { ActionType } from '../../utils/types';
 import { QuestionState } from './questions.state';
 
 export const loadConfData = () => async (dispatch: React.Dispatch<any>) => {

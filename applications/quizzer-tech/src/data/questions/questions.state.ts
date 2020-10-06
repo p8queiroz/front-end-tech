@@ -1,17 +1,15 @@
-import { Location } from '../../models/Location';
-import { Speaker } from '../../models/Speaker';
-import { Question, Session } from '../../models/Questions';
+import { Question } from '../../models/Questions';
 
 export interface QuestionState {
   questions: Question[];
-  sessions: Session[];
-  speakers: Speaker[];
   favorites: number[];
-  locations: Location[];
-  filteredTechs: string[];
   searchText?: string;
-  mapCenterId?: number;
   loading?: boolean;
   allTechs: string[];
+  filteredTechs: string[];
   menuEnabled: boolean;
+  // speakers: Speaker[];
+  // sessions: Session[];
+  // locations: Location[];
+  // mapCenterId?: number;
 }
