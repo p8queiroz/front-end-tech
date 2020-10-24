@@ -14,7 +14,6 @@ const getIdParam = (_state: AppState, props: any) => {
   return props.match.params['id'];
 }
 
-
 export const getQuestion = createSelector(
   getQuestions, getIdParam,
   (questions, id) => {
@@ -23,16 +22,17 @@ export const getQuestion = createSelector(
 );
 
 export const getFilteredQuestions = createSelector(
-  getQuestions, getFilteredTechs,
-  (questions, filteredTechs) => {
+  getQuestions, getFilteredTechs, //A,B
+  (questions, filteredTechs) => { //A,B
     if (filteredTechs.length === 0) return questions;
-    const filteedQuestions: Question[] = [];
+    //** TODO commitar no repositório do ionic */
+    const filteredQuestions: Question[] = [];
     questions.forEach(question => {
       if (filteredTechs.indexOf(question.technology) > -1) {
-        filteedQuestions.push(question);
+        filteredQuestions.push(question);
       }
     })
-    return filteedQuestions;
+    return filteredQuestions;
   }
 );
 
@@ -201,4 +201,49 @@ export const mapCenter = (state: AppState) => {
   }
   return item;
 }
+*/
+
+/*
+--yOU CAN FIND THE CONCEPT OF MEMOIZATION READING THE CODE BELLOW
+const state = {
+    a : {
+        first : 5
+    },
+    b : 10
+};
+
+
+const selectA = state => state.a;
+const selectB = state => state.b;
+
+const selectA1 = createSelector(
+    [selectA],
+    a => a.first
+);
+
+const selectResult = createSelector(
+    [selectA1, selectB],
+    (a1, b) => {
+        console.log("Output selector running");
+        return a1 + b;
+    }
+);
+
+const result = selectResult(state);
+// Log: "Output selector running"
+console.log(result);
+// 15
+
+const secondResult = selectResult(state);
+// No log output
+console.log(secondResult);
+// 15
+
+
+It's important to note that by default, Reselect only memoizes the most recent set of parameters. That means that if you call a selector repeatedly with different inputs, it will still return a result, but it will have to keep re-running the output selector to produce the result:
+
+const a = someSelector(state, 1); // first call, not memoized
+const b = someSelector(state, 1); // same inputs, memoized
+const c = someSelector(state, 2); // different inputs, not memoized
+const d = someSelector(state, 1); // different inputs from last time, not memoized
 */

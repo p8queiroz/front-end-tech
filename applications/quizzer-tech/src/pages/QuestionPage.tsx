@@ -69,7 +69,10 @@ const QuestionPage: React.FC<QuestionPageProps> = ({ favoritesQuestions, questio
             <IonTitle>Questions</IonTitle>
           }
           {showSearchbar &&
-            <IonSearchbar showCancelButton="always" placeholder="Search" onIonChange={(e: CustomEvent) => setSearchText(e.detail.value)} onIonCancel={() => setShowSearchbar(false)}></IonSearchbar>
+            <IonSearchbar showCancelButton="always"
+              placeholder="Search"
+              onIonChange={(e: CustomEvent) => setSearchText(e.detail.value)}
+              onIonCancel={() => setShowSearchbar(false)}></IonSearchbar>
           }
 
           <IonButtons slot="end">
