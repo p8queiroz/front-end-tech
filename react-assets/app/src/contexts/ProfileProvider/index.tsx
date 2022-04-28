@@ -7,7 +7,6 @@ import { Redirect } from 'react-router-dom';
 //import { UserResolver, UserById } from 'graphql/users';
 //import { CustomerLocationType, UserType } from '@sustain/dtos';
 //import { propOr } from 'ramda';
-//import { Spinner } from '@4sided/material-ui-context';
 //import { useFlags } from 'launchdarkly-react-client-sdk';
 //import { CustomerType } from '@sustain/dtos';
 //import { persistState } from 'utils/local-storage-helpers';

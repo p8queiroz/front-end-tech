@@ -6,33 +6,11 @@ import InterPolationProvider from 'contexts/InterpolationTokenProvider';
 import CarouselsResolver from 'graphql/carousels/resolver';
 import ActionCategoryResolver from 'graphql/actionCategory/resolver';
 import TokensResolver from 'graphql/tokens/resolver';
-import { CustomMaterialUIProvider } from '@4sided/material-ui-context';
-import AuthContext from '@4sided/frontend-dev-utils';
 import Dashboard from '.';
 import Profile from 'containers/Profile';
 import { UserResolver } from 'graphql/users';
 
 afterEach(cleanup);
-// mock user profile
-jest.mock('@4sided/frontend-dev-utils', () => ({
-  useAuth: () => ({
-    isLoggedIn: true,
-    getProfile: jest.fn(() => ({
-      idToken: {
-        oid: 'ce861df4-08c4-4b26-85a7-2693b59698b9',
-        family_name: 'test',
-        given_name: 'test',
-        emails: ['someEmail@sustain.life'],
-      },
-      accountIdentifier: {},
-    })),
-  }),
-  useConfig: () => ({
-    config: {
-      APP_ENV: 'nonprod',
-    },
-  }),
-}));
 
 // mock graphql queries
 const mocks = [
@@ -89,7 +67,8 @@ const mocks = [
             actionCategoryId: '1',
             actionCategoryName: 'Waste',
             cardHeaderSrc: 'wastemanagementCardImage.jpg',
-            iconSrc: 'https://prorotypeimages.blob.core.windows.net/sustaintagicons/IconOnboard_waste.jpg',
+            iconSrc:
+              'https://prorotypeimages.blob.core.windows.net/sustaintagicons/IconOnboard_waste.jpg',
             headerSrc: '',
             bannerSrc: '',
             actionCategoryCardDescription:

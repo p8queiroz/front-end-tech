@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/core/styles';
-//import { appColors } from '@4sided/material-ui-context';
 
 const useStyles = makeStyles((theme) => ({
   paper: {

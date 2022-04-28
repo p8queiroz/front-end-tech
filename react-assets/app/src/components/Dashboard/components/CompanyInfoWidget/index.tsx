@@ -6,7 +6,6 @@ import React from 'react';
 // import useStyles from './styles';
 // import { Modal, TextField } from '@material-ui/core';
 // import Button from '@material-ui/core/Button';
-// import { appColors } from '@4sided/material-ui-context';
 // import Avatar from '@material-ui/core/Avatar';
 // import { IconButton } from '@material-ui/core';
 // import CreateIcon from '@material-ui/icons/Create';

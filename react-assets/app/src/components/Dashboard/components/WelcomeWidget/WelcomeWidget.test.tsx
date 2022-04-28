@@ -2,7 +2,7 @@ import '@testing-library/jest-dom/extend-expect';
 import { render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import WelcomeWidget from '.';
-import { CustomMaterialUIProvider } from '@4sided/material-ui-context';
+
 import { Grid } from 'components/MaterialUIBase';
 
 afterEach(cleanup);

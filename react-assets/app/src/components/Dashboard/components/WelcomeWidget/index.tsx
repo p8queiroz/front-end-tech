@@ -9,7 +9,6 @@ import {
 } from '../../../MaterialUIBase';
 
 import useStyles from './styles';
-//import { appColors } from '@4sided/material-ui-context';
 import ZenImage from '../../../../assets/zen.png';
 
 import WidgetLoader from '../../../../components/WidgetLoader';
