@@ -11,7 +11,6 @@ import Playground1 from './pages/Playground1.js';
 import Playground2 from './pages/Playground';
 import Card from './pages/Cards/Card';
 import ProviderPage from './pages/Provider/ProviderPage';
-import DashboardPage from './pages/Dashboard';
 import NotebookPage from './pages/Notebook';
 import AppLayout from './components/AppLayout';
 
@@ -19,24 +18,8 @@ const RouterApp = () => {
   return (
     <Router>
       <Switch>
-        <Route
-          exact
-          path="/"
-          render={() => (
-            <AppLayout>
-              <DashboardPage />
-            </AppLayout>
-          )}
-        ></Route>
-        <Route
-          exact
-          path="/notebook"
-          render={() => (
-            <AppLayout>
-              <NotebookPage />
-            </AppLayout>
-          )}
-        ></Route>
+        <Route exact path="/" render={() => <HomePage />}></Route>
+        <Route exact path="/notebook" render={() => <NotebookPage />}></Route>
         <Route exact path="/home">
           <HomePage />
         </Route>
