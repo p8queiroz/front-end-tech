@@ -101,6 +101,10 @@ const HomePage: React.FC = () => {
             <a href="/grid3">Grid 3 (Material UI)</a>
           </li>
           <li>
+            <a href="/css-grid">CSS grid(Material UI)</a>
+          </li>
+
+          <li>
             <a href="/card">Card (Material UI)</a>
           </li>
           <li>
